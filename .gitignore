@@ -3,4 +3,6 @@
 *.gz  (compressed)
 log/*.log
 log/*.log.[0-9]
-
+node_modules/
+*.log
+.c9/
