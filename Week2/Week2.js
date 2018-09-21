@@ -48,14 +48,7 @@ $('td[style="border-bottom:1px solid #e3e3e3; width:260px"]').each(function(i, e
      
      // write to a CSV file
      AAInfoCSV.write(`${locationName}, ${eventName}, ${LocationAddress} \n`);
-      
-      
-    //  fs.writeFile('data/AAInfoTest.txt', `${locationName}, ${eventName}, ${LocationAddress} \n`,(err) => {
-    //      if (err) throw err;
-    //      console.log('The file has been saved!');
-    //         });
-            
-   // AAInfoCSV.write( locationName, eventName, locationAdress '\n');
+  
 });
 
 // write to text file
