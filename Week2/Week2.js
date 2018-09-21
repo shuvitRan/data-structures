@@ -4,6 +4,7 @@ var fs = require('fs');
 var cheerio = require('cheerio');
 
 const AAInfoCSV = fs.createWriteStream('data/AAinfo.csv');
+//const AAInfoJson= fs.createWriteStream('data/AAinfo.json');
 
 AAInfoCSV.write('LocationName,EventName,Address \n');
 // load the thesis text file into a variable, `content`
@@ -14,24 +15,41 @@ var content = fs.readFileSync('data/m10.txt');
 var $ = cheerio.load(content);
 
 var AAinfo= '';
-
+var AAinfoJ= '';
+var keyValue=0;
 // print (to the console) names of thesis students
 $('td[style="border-bottom:1px solid #e3e3e3; width:260px"]').each(function(i, elem) {
     //const item= $(elem).not('span').text();
+    //find location name in original file
     const locationName= $(elem).find('h4').text();
+    //find detail info in the file
     const detailInfo= $(elem).find('.detailsBox').text();
+    //find event name in the file
     const eventName= $(elem).find('b').text();
+    //remove other info except address 
     $(elem).find('h4').remove(); 
     $(elem).find('div').remove(); 
     $(elem).find('span').remove(); 
     $(elem).find('b').remove();
+     console.log($(elem).get().length);
+    //find the location address and take out the empty spaces with regex
     const LocationAddress= $(elem).text().replace(/\s\s+/g, '');
-    //console.log(locationName, detailInfo);
-    console.log(locationName +' | '+eventName +' | '+ LocationAddress);
     
+   //console.log(locationName +' | '+eventName +' | '+ LocationAddress);
+    // save the info to a global var
      AAinfo+= (locationName +' | '+eventName +' | '+ LocationAddress)+'\n';
-     AAInfoCSV.write(`${locationName}, ${eventName}, ${LocationAddress} \n`);
      
+     // test on try save the info to a json format
+     keyValue++;  //create a key for json file
+    
+     // still need to take out the last comma of last element in the AAInfo.json file 
+
+      AAinfoJ+=(`\"${keyValue}\"\:\[ \"${locationName}\" \, \"${eventName}\" \,\"${LocationAddress}\" \]\,\n`);
+     
+     // write to a CSV file
+     AAInfoCSV.write(`${locationName}, ${eventName}, ${LocationAddress} \n`);
+      
+      
     //  fs.writeFile('data/AAInfoTest.txt', `${locationName}, ${eventName}, ${LocationAddress} \n`,(err) => {
     //      if (err) throw err;
     //      console.log('The file has been saved!');
@@ -40,13 +58,9 @@ $('td[style="border-bottom:1px solid #e3e3e3; width:260px"]').each(function(i, e
    // AAInfoCSV.write( locationName, eventName, locationAdress '\n');
 });
 
+// write to text file
  fs.writeFileSync('data/AAInfo.txt', AAinfo);
+ fs.writeFileSync('data/AAInfo.json', '{' + '\n' + AAinfoJ+ '\n' +'}');
 
-// write the project titles to a text file
-// var thesisTitles = ''; // this variable will hold the lines of text
-
-// $('.project .title').each(function(i, elem) {
-//     thesisTitles += ($(elem).text()) + '\n';
-// });
-
- //fs.writeFileSync('data/thesisTitles.txt', thesisTitles);
+ console.log(AAinfoJ);
+ 
