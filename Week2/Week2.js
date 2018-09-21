@@ -31,7 +31,7 @@ $('td[style="border-bottom:1px solid #e3e3e3; width:260px"]').each(function(i, e
     $(elem).find('div').remove(); 
     $(elem).find('span').remove(); 
     $(elem).find('b').remove();
-     console.log($(elem).get().length);
+    
     //find the location address and take out the empty spaces with regex
     const LocationAddress= $(elem).text().replace(/\s\s+/g, '');
     
