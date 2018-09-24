@@ -17,6 +17,7 @@ var $ = cheerio.load(content);
 var AAinfo= '';
 var AAinfoJ= '';
 var keyValue=0;
+var LDArr= [];
 // print (to the console) names of thesis students
 $('td[style="border-bottom:1px solid #e3e3e3; width:260px"]').each(function(i, elem) {
     //const item= $(elem).not('span').text();
@@ -43,17 +44,21 @@ $('td[style="border-bottom:1px solid #e3e3e3; width:260px"]').each(function(i, e
      keyValue++;  //create a key for json file
     
      // still need to take out the last comma of last element in the AAInfo.json file 
-
-      AAinfoJ+=(`\"${keyValue}\"\:\[ \"${locationName}\" \, \"${eventName}\" \,\"${LocationAddress}\" \]\,\n`);
+     //AAinfoJ+=(`\"${keyValue}\"\:\[ \"${locationName}\" \, \"${eventName}\" \,\"${LocationAddress}\" \]\,\n`);
+     //AAinfoJ+=(`${keyValue} \: \"${LocationAddress}\" \n`);
      
+     // fix the json format
+     LDArr.push({Address:LocationAddress});
      // write to a CSV file
      AAInfoCSV.write(`${locationName}, ${eventName}, ${LocationAddress} \n`);
   
 });
 
+var AAinfoJformat= JSON.stringify(LDArr);
 // write to text file
  fs.writeFileSync('data/AAInfo.txt', AAinfo);
- fs.writeFileSync('data/AAInfo.json', '{' + '\n' + AAinfoJ+ '\n' +'}');
 
- console.log(AAinfoJ);
+ console.log(LDArr);
+ // write to Json file
+ fs.writeFileSync('data/AAInfo.json', AAinfoJformat);
  
