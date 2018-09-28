@@ -7,3 +7,4 @@ node_modules/
 *.log
 .c9/
 package-lock.json
+.env

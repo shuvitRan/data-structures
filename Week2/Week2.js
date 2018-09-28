@@ -27,38 +27,44 @@ $('td[style="border-bottom:1px solid #e3e3e3; width:260px"]').each(function(i, e
     const detailInfo= $(elem).find('.detailsBox').text();
     //find event name in the file
     const eventName= $(elem).find('b').text();
+   
+   //OriginalWay------------------------------------------------------------
     //remove other info except address 
-    $(elem).find('h4').remove(); 
-    $(elem).find('div').remove(); 
-    $(elem).find('span').remove(); 
-    $(elem).find('b').remove();
+    // $(elem).find('h4').remove(); 
+    // $(elem).find('div').remove(); 
+    // $(elem).find('span').remove(); 
+    // $(elem).find('b').remove();
     
     //find the location address and take out the empty spaces with regex
-    const LocationAddress= $(elem).text().replace(/\s\s+/g, '');
+    // const LocationAddress= $(elem).text().replace(/\s\s+/g, '');
+   //------------------------------------------------------------------------ 
+   
+  //new way
+    // console.log($(elem).html().split('<br>')[2].split(',')[0].trim());
     
-   //console.log(locationName +' | '+eventName +' | '+ LocationAddress);
+     const LocationAddress=($(elem).html().split('<br>')[2].split(',')[0].split('@')[0].trim().replace(/[a-z][\d]/g,'t 1'));
+     console.log($(elem).html().split('<br>')[2].split(',')[0].split('@')[0].trim().replace(/[a-z][\d]/g,'t 1'));
+   
     // save the info to a global var
-     AAinfo+= (locationName +' | '+eventName +' | '+ LocationAddress)+'\n';
+    // AAinfo+= (LocationAddress +' | '+eventName +' | '+ locationName)+'\n';
      
      // test on try save the info to a json format
      keyValue++;  //create a key for json file
     
-     // still need to take out the last comma of last element in the AAInfo.json file 
-     //AAinfoJ+=(`\"${keyValue}\"\:\[ \"${locationName}\" \, \"${eventName}\" \,\"${LocationAddress}\" \]\,\n`);
-     //AAinfoJ+=(`${keyValue} \: \"${LocationAddress}\" \n`);
+     
      
      // fix the json format
-     LDArr.push({Address:LocationAddress});
+     LDArr.push(LocationAddress);
      // write to a CSV file
-     AAInfoCSV.write(`${locationName}, ${eventName}, ${LocationAddress} \n`);
+    // AAInfoCSV.write(`${locationName}, ${eventName}, ${LocationAddress} \n`);
   
 });
 
-var AAinfoJformat= JSON.stringify(LDArr);
+
 // write to text file
- fs.writeFileSync('data/AAInfo.txt', AAinfo);
+ //fs.writeFileSync('data/AAInfoOri.txt', AAinfo);
 
  console.log(LDArr);
  // write to Json file
- fs.writeFileSync('data/AAInfo.json', AAinfoJformat);
+ fs.writeFileSync('data/AAInfo.json', JSON.stringify(LDArr));
  
