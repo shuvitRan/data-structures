@@ -1,3 +1,6 @@
+![Plan AA Meeting Database](/DatabaseSchema/AADataSchema.png)
+
+
 # Weekly Assignment 4
 
 ### Due 10/5 at 2:00pm
