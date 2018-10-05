@@ -1,4 +1,4 @@
-![Plan AA Meeting Database](/DatabaseSchema/AADataSchema.png)
+![Plan AA Meeting Database](https://github.com/BounceRan/data-structures/blob/master/Week4/DatabaseSchema/AADataSchema.png)
 
 
 # Weekly Assignment 4
