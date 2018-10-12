@@ -1,3 +1,5 @@
+![Plan AA Meeting Database](https://github.com/BounceRan/data-structures/blob/master/Week5/diaryDataSchema/SketchTherapySchema.png)
+
 # Weekly Assignment 5
 
 ### Due 10/12 at 2:00pm
