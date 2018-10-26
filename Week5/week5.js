@@ -1,3 +1,6 @@
+
+
+
 var diaryEntries = [];
 
 require('dotenv').config({ path: '../.env' });
@@ -5,41 +8,59 @@ var async = require('async');
 
 var AWS = require('aws-sdk');
 AWS.config = new AWS.Config();
-AWS.config.accessKeyId = process.env.AK_IAM;
-AWS.config.secretAccessKey = process.env.SAK_IAM;
+// AWS.config.accessKeyId = process.env.AK_IAM;
+// AWS.config.secretAccessKey = process.env.SAK_IAM;
+AWS.config.accessKeyId = process.env.RTAK ;
+AWS.config.secretAccessKey = process.RTSK;
+
 AWS.config.region = "us-east-2";
+
+
+
+
 
 class DiaryEntry {
     
    
     
     
-  constructor(primaryKey, randomNote, happy, sketch) {
-    let date = new Date(Date.now());
-    let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    this.pk = {};
-    this.pk.N = primaryKey.toString();
-    this.date = {}; 
-    this.date.S = date.toLocaleDateString( 'en-US',options).toString();
-    this.randomNote = {};
-    this.randomNote.S = randomNote;
-    this.happy = {};
-    this.happy.BOOL = happy; 
+  constructor(primaryKey, dt, sketch, noteOfSketch) {
+    //auto date
+    //let date = new Date(Date.now());
+   // let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+   // let options = { year: 'numeric', month: 'long', day: 'numeric' };
+   //this.date.S = date.toLocaleDateString( 'en-US',options).toString();
+    this.typeOfSketch = {};
+    this.typeOfSketch.S = primaryKey.toString();
+    this.dt = {}; 
+    
+    this.dt.N = new Date(dt).valueOf().toString();
+    
+    this.date= {};
+     this.date.S = new Date(dt).toDateString();
+    
     if (sketch != null) {
      this.sketch = {};
      this.sketch.SS = sketch; 
     }
-    this.month = {};
-    //	Get the month as a number (0-11)
-    this.month.N = new Date().getMonth().toString();
+    if (noteOfSketch != null){
+      this.noteOfSketch={};
+      this.noteOfSketch.SS= noteOfSketch;
+      
+    }
+   // this.month = {};
+    ////	Get the month as a number (0-11)
+   // this.month.N = new Date().getMonth().toString();
   }
 }
 
-diaryEntries.push(new DiaryEntry(0, "Sketch therapy", true, ["tesing URL", "testingURL2"]));
-diaryEntries.push(new DiaryEntry(1, "Second Sketh", true, ["testingURL","testingURL2","testingURL3"]));
-diaryEntries.push(new DiaryEntry(2, "Third Sketh", true, ["testingURL","testingURL2","testingURL4"]));
+diaryEntries.push(new DiaryEntry("pencil", 'October 14, 2018', ["https://github.com/BounceRan/SketchTherapy/blob/master/Sketch/Oct_14_2018.jpg"],["figure study"]));
+diaryEntries.push(new DiaryEntry("pencil", 'October 18, 2018', ["https://github.com/BounceRan/SketchTherapy/blob/master/Sketch/Oct_18_2018.jpg","https://github.com/BounceRan/SketchTherapy/blob/master/Sketch/Oct_18_2018_2.jpg"],["Storyboard Study","Storyboard Study 2"]));
+//diaryEntries.push(new DiaryEntry("pen", 'October 20, 2018', ["https://github.com/BounceRan/SketchTherapy/blob/master/Sketch/Oct_20_2018.jpg"],["trees"]));
 
-console.log(diaryEntries[1].pk.N);
+//diaryEntries.push(new DiaryEntry(2, "Third Sketh", ["testingURL","testingURL2","testingURL4"]));
+
+console.log(diaryEntries[0].typeOfSketch.S);
 
 //console.log(process.env.SAK_IAM)
 
@@ -68,6 +89,6 @@ dynamodb.putItem(params, function (err, data) {
   else     console.log(data);           // successful response
 });
    
-  console.log('insert'+ value.pk.N)
+  console.log('insert'+ value.typeOfSketch.S)
     setTimeout(callback, 1000); 
 }); 

@@ -1,0 +1,1111 @@
+[{
+  "address": "7 E 10TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.6482599",
+    "Longitude": "-73.9704806"
+  },
+  "location": "N.Y.U Bronfman Center",
+  "group": "12 CONCEPTS WORKSHOP",
+  "wheelchair": false,
+  "day": ["Wednesday"],
+  "start": ["8:15 PM"],
+  "end": ["9:15 PM"],
+  "type": ["C"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "155 E 22ND ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7384244",
+    "Longitude": "-73.9840055"
+  },
+  "location": "Gustavus Adolphus Church",
+  "group": "22 BELOW",
+  "wheelchair": false,
+  "day": ["Thursday", "Friday", "Monday", "Tuesday", "Wednesday"],
+  "start": ["12:15 PM", "12:15 PM", "12:15 PM", "12:15 PM", "12:15 PM"],
+  "end": ["1:15 PM", "1:15 PM", "1:15 PM", "1:15 PM", "1:15 PM"],
+  "type": ["OD", "C", "BB", "B", "S"],
+  "spinterest": ["null", "null", "null", "Living Sober", "null"],
+  "zone": 3
+}, {
+  "address": "61 FOURTH AVE, New York, NY",
+  "latLon": {
+    "Latitude": "40.7307719",
+    "Longitude": "-73.9903164"
+  },
+  "location": "Three Jewels Community Center",
+  "group": "AA AT THE THREE JEWELS",
+  "wheelchair": false,
+  "day": ["Thursday", "Sunday"],
+  "start": ["6:00 PM", "7:00 PM"],
+  "end": ["7:15 PM", "8:30 PM"],
+  "type": ["null", "null"],
+  "spinterest": ["Meditation", "Meditation"],
+  "zone": 3
+}, {
+  "address": "208 W 13TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7381228",
+    "Longitude": "-74.0010304"
+  },
+  "location": "Lesbian, Gay, Bi-Sexual &amp; Transgender Community Center",
+  "group": "AGNOSTICS AT NOON",
+  "wheelchair": false,
+  "day": ["Thursday"],
+  "start": ["12:00 PM"],
+  "end": ["1:00 PM"],
+  "type": ["C"],
+  "spinterest": ["Agnostic"],
+  "zone": 3
+}, {
+  "address": "123 E 15TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7346341",
+    "Longitude": "-73.9879773"
+  },
+  "location": "Seafarers &amp; Intl House",
+  "group": "ALIVE AGAIN",
+  "wheelchair": true,
+  "day": ["Saturday"],
+  "start": ["1:00 PM"],
+  "end": ["2:00 PM"],
+  "type": ["S"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "61 GRAMERCY PARK N, New York, NY",
+  "latLon": {
+    "Latitude": "40.7387068",
+    "Longitude": "-73.986572"
+  },
+  "location": "Calvary Church Parish House",
+  "group": "AT BILL''S PLACE",
+  "wheelchair": false,
+  "day": ["Wednesday"],
+  "start": ["6:30 PM"],
+  "end": ["7:30 PM"],
+  "type": ["C"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "155 E 22ND ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7384244",
+    "Longitude": "-73.9840055"
+  },
+  "location": "Gustavus Adolphus Lutheran Church",
+  "group": "ATLANTIC BY THE BOOK",
+  "wheelchair": true,
+  "day": ["Wednesday"],
+  "start": ["7:00 PM"],
+  "end": ["8:00 PM"],
+  "type": ["BB"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "127 E 22ND ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7390247",
+    "Longitude": "-73.9854161"
+  },
+  "location": "Mabel Bacon High School of the Future",
+  "group": "ATLANTIC DOWNTOWN",
+  "wheelchair": true,
+  "day": ["Sunday"],
+  "start": ["7:00 PM"],
+  "end": ["8:00 PM"],
+  "type": ["O"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "602 E 9TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7260409",
+    "Longitude": "-73.9800393"
+  },
+  "location": "Trinity Lower East Side Lutheran Parish",
+  "group": "AVENUE B CLEAN AND DRY",
+  "wheelchair": true,
+  "day": ["Thursday"],
+  "start": ["7:00 PM"],
+  "end": ["8:15 PM"],
+  "type": ["C"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "125 W 14TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7379244",
+    "Longitude": "-73.9976813"
+  },
+  "location": "McBurney YMCA",
+  "group": "BIG BOOK MAGIC",
+  "wheelchair": true,
+  "day": ["Thursday"],
+  "start": ["7:45 PM"],
+  "end": ["8:45 PM"],
+  "type": ["BB"],
+  "spinterest": ["Big Book Topic"],
+  "zone": 3
+}, {
+  "address": "346 W 20TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7441452",
+    "Longitude": "-74.0019191"
+  },
+  "location": "St. Peters Episcopal Church- Rectory",
+  "group": "CHELSEA MORNINGS",
+  "wheelchair": false,
+  "day": ["Tuesday", "Monday", "Wednesday", "Thursday", "Friday", "Saturday"],
+  "start": ["8:00 AM", "8:00 AM", "8:00 AM", "8:00 AM", "8:00 AM", "8:00 AM"],
+  "end": ["9:00 AM", "9:00 AM", "9:00 AM", "9:00 AM", "9:00 AM", "9:00 AM"],
+  "type": ["B", "OD", "S", "BB", "C", "OD"],
+  "spinterest": ["null", "null", "null", "null", "Meditation", "null"],
+  "zone": 3
+}, {
+  "address": "125 W 14TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7379244",
+    "Longitude": "-73.9976813"
+  },
+  "location": "McBurney YMCA",
+  "group": "CHELSEA NOONERS",
+  "wheelchair": true,
+  "day": ["Tuesday", "Thursday"],
+  "start": ["12:00 PM", "12:00 PM"],
+  "end": ["1:00 PM", "1:00 PM"],
+  "type": ["C", "C"],
+  "spinterest": ["null", "null"],
+  "zone": 3
+}, {
+  "address": "414 E 14TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7309298",
+    "Longitude": "-73.9819876"
+  },
+  "location": "Our Lady of Immaculate Conception",
+  "group": "COMPLETE ABANDON",
+  "wheelchair": true,
+  "day": ["Wednesday"],
+  "start": ["8:30 PM"],
+  "end": ["9:30 PM"],
+  "type": ["S"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "119 NINTH AVE, New York, NY",
+  "latLon": {
+    "Latitude": "40.7432442",
+    "Longitude": "-74.0039393"
+  },
+  "location": "Fulton Senior Center",
+  "group": "COMPLETELY SOBER",
+  "wheelchair": true,
+  "day": ["Monday"],
+  "start": ["6:45 PM"],
+  "end": ["8:00 PM"],
+  "type": ["OD"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "28 GRAMERCY PARK S, New York, NY",
+  "latLon": {
+    "Latitude": "40.7371499",
+    "Longitude": "-73.9853123"
+  },
+  "location": "Christopher House",
+  "group": "CROSSROADS",
+  "wheelchair": true,
+  "day": ["Saturday", "Sunday"],
+  "start": ["4:00 PM", "4:00 PM"],
+  "end": ["5:00 PM", "5:00 PM"],
+  "type": ["O", "O"],
+  "spinterest": ["null", "null"],
+  "zone": 3
+}, {
+  "address": "202 W 24 ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7449478",
+    "Longitude": "-73.995862"
+  },
+  "location": "Brotherhood Synagogue",
+  "group": "EAST MEETS WEST IN SOBRIETY",
+  "wheelchair": true,
+  "day": ["Wednesday"],
+  "start": ["7:00 PM"],
+  "end": ["8:00 PM"],
+  "type": ["C"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "50 E 7TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.6519369",
+    "Longitude": "-73.9750389"
+  },
+  "location": "Middle Collegiate Church",
+  "group": "EAST VILLAGE GROUP",
+  "wheelchair": false,
+  "day": ["Tuesday", "Saturday", "Saturday", "Sunday", "Tuesday", "Tuesday", "Saturday"],
+  "start": ["7:00 PM", "7:00 PM", "7:00 PM", "7:00 PM", "7:00 PM", "8:30 PM", "8:30 PM"],
+  "end": ["8:00 PM", "8:00 PM", "8:00 PM", "8:00 PM", "8:15 PM", "9:30 PM", "9:30 PM"],
+  "type": ["O", "B", "OD", "BB", "S", "C", "C"],
+  "spinterest": ["null", "null", "null", "null", "null", "null", "null"],
+  "zone": 3
+}, {
+  "address": "273 BOWERY, New York, NY",
+  "latLon": {
+    "Latitude": "40.7236736",
+    "Longitude": "-73.9924832"
+  },
+  "location": "University Settlement House",
+  "group": "EXPERIENCE STRENGTH AND HOPE",
+  "wheelchair": true,
+  "day": ["Wednesday"],
+  "start": ["7:00 PM"],
+  "end": ["8:00 PM"],
+  "type": ["C"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "802 BROADWAY, New York, NY",
+  "latLon": {
+    "Latitude": "40.7320395",
+    "Longitude": "-73.991189"
+  },
+  "location": "Grace Church Office Building",
+  "group": "GRACE ON BROADWAY",
+  "wheelchair": true,
+  "day": ["Monday", "Tuesday", "Thursday"],
+  "start": ["8:15 AM", "8:15 AM", "8:15 AM"],
+  "end": ["9:15 AM", "9:15 AM", "9:15 AM"],
+  "type": ["O", "C", "C"],
+  "spinterest": ["null", "null", "null"],
+  "zone": 3
+}, {
+  "address": "28 GRAMMERCY PARK S, New York, NY",
+  "latLon": {
+    "Latitude": "40.7371499",
+    "Longitude": "-73.9853123"
+  },
+  "location": "Brothhood Synagogue",
+  "group": "GRAMERCY",
+  "wheelchair": true,
+  "day": ["Monday", "Thursday"],
+  "start": ["6:30 PM", "6:30 PM"],
+  "end": ["7:30 PM", "7:30 PM"],
+  "type": ["C", "S"],
+  "spinterest": ["null", "null"],
+  "zone": 3
+}, {
+  "address": "209 E 16TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7345135",
+    "Longitude": "-73.9854432"
+  },
+  "location": "Saint George Episcopal Church",
+  "group": "GRATEFUL GROUP OF A.A.",
+  "wheelchair": false,
+  "day": ["Monday", "Friday", "Tuesday", "Thursday", "Sunday", "Wednesday", "Monday"],
+  "start": ["5:00 PM", "5:00 PM", "5:00 PM", "5:00 PM", "5:00 PM", "5:00 PM", "6:15 PM"],
+  "end": ["6:00 PM", "6:00 PM", "6:00 PM", "6:00 PM", "6:00 PM", "6:00 PM", "7:00 PM"],
+  "type": ["B", "BB", "O", "null", "O", "S", "S"],
+  "spinterest": ["null", "null", "null", "Meditation", "Men", "null", "Fourth Step Workshop"],
+  "zone": 3
+}, {
+  "address": "44 2ND AVE, New York, NY",
+  "latLon": {
+    "Latitude": "40.7251086",
+    "Longitude": "-73.9899858"
+  },
+  "location": "Church of the Nativity",
+  "group": "GRUPO EL MILAGRO",
+  "wheelchair": false,
+  "day": ["Sunday"],
+  "start": ["8:00 PM"],
+  "end": ["9:00 PM"],
+  "type": ["O"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "229 W 14TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7392489",
+    "Longitude": "-74.0008788"
+  },
+  "location": "Our Lady of Guadalupe Church",
+  "group": "GRUPO GRATITUD",
+  "wheelchair": false,
+  "day": ["Monday", "Tuesday"],
+  "start": ["8:00 PM", "8:00 PM"],
+  "end": ["9:00 PM", "9:00 PM"],
+  "type": ["C", "O"],
+  "spinterest": ["null", "null"],
+  "zone": 3
+}, {
+  "address": "229 W 14TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7392489",
+    "Longitude": "-74.0008788"
+  },
+  "location": "Our Lady of Guadalupe Church",
+  "group": "GRUPO SOBRIEDAD",
+  "wheelchair": false,
+  "day": ["Tuesday"],
+  "start": ["1:00 PM"],
+  "end": ["2:00 PM"],
+  "type": ["C"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "208 W 13TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7381228",
+    "Longitude": "-74.0010304"
+  },
+  "location": "Lesbian, Gay, Bi-Sexual &amp; Transgender Community Center",
+  "group": "HIGH NOON",
+  "wheelchair": true,
+  "day": ["Sunday"],
+  "start": ["12:00 PM"],
+  "end": ["1:00 PM"],
+  "type": ["O"],
+  "spinterest": ["Interpreted for the Deaf"],
+  "zone": 3
+}, {
+  "address": "28 GRAMERCY PARK S, New York, NY",
+  "latLon": {
+    "Latitude": "40.7371499",
+    "Longitude": "-73.9853123"
+  },
+  "location": "Brotherhood Synagogue",
+  "group": "JUST FOR TODAY",
+  "wheelchair": true,
+  "day": ["Tuesday"],
+  "start": ["7:00 PM"],
+  "end": ["8:00 PM"],
+  "type": ["S"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "208 W 13TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7381228",
+    "Longitude": "-74.0010304"
+  },
+  "location": "Lesbian, Gay, Bisexual, &amp; Transgender Community Center",
+  "group": "LAeX",
+  "wheelchair": true,
+  "day": ["Saturday"],
+  "start": ["8:00 PM"],
+  "end": ["9:00 PM"],
+  "type": ["O"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "307 W 26TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7474685",
+    "Longitude": "-73.9974137"
+  },
+  "location": "The Upright Citizens Brigade Theatre",
+  "group": "LEARNING TO LIVE ( :1)",
+  "wheelchair": true,
+  "day": ["Thursday", "Monday", "Tuesday", "Wednesday", "Friday"],
+  "start": ["12:00 PM", "12:00 PM", "12:00 PM", "12:00 PM", "12:00 PM"],
+  "end": ["1:00 AM", "1:00 PM", "1:00 PM", "1:00 PM", "1:00 PM"],
+  "type": ["C", "B", "BB", "S", "OD"],
+  "spinterest": ["Promises", "null", "null", "null", "null"],
+  "zone": 3
+}, {
+  "address": "343 W 25TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.747411",
+    "Longitude": "-73.9992698"
+  },
+  "location": "St. Columba Church",
+  "group": "LEARNING TO LIVE ( :II)",
+  "wheelchair": false,
+  "day": ["Monday"],
+  "start": ["7:00 PM"],
+  "end": ["8:00 PM"],
+  "type": ["O"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "80 SAINT MARK, New York, NY",
+  "latLon": {
+    "Latitude": "40.7276820090652",
+    "Longitude": "-73.9857361176058"
+  },
+  "location": "Theatre 80",
+  "group": "LIVING NOW",
+  "wheelchair": false,
+  "day": ["Saturday", "Sunday", "Sunday", "Thursday", "Saturday", "Monday", "Tuesday", "Wednesday", "Friday", "Sunday", "Saturday", "Wednesday", "Thursday", "Tuesday"],
+  "start": ["10:00 AM", "10:00 AM", "10:15 AM", "1:00 PM", "1:00 PM", "1:00 PM", "1:00 PM", "1:00 PM", "1:00 PM", "2:00 PM", "5:30 PM", "6:00 PM", "7:00 PM", "7:00 PM"],
+  "end": ["11:00 AM", "11:00 AM", "11:15 AM", "2:00 PM", "2:00 PM", "2:00 PM", "2:00 PM", "2:00 PM", "2:00 PM", "3:00 PM", "6:30 PM", "7:00 PM", "8:00 PM", "8:00 PM"],
+  "type": ["O", "OD", "C", "S", "OD", "OD", "O", "OD", "BB", "BB", "B", "B", "S", "S"],
+  "spinterest": ["null", "null", "null", "null", "Women", "null", "null", "null", "null", "null", "null", "Beginners Workshop", "null", "Fourth Step Workshop"],
+  "zone": 3
+}, {
+  "address": "208 W 13TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7381228",
+    "Longitude": "-74.0010304"
+  },
+  "location": "Lesbian, Gay, Bi-Sexual &amp; Transgender Community Center",
+  "group": "LIVING TODAY",
+  "wheelchair": true,
+  "day": ["Sunday", "Sunday"],
+  "start": ["6:45 PM", "8:00 PM"],
+  "end": ["7:45 PM", "9:00 PM"],
+  "type": ["S", "O"],
+  "spinterest": ["Gay, Lesbian and Bisexual", "Gay, Lesbian and Bisexual"],
+  "zone": 3
+}, {
+  "address": "51 E 25TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7419488",
+    "Longitude": "-73.9861549"
+  },
+  "location": "Intercare",
+  "group": "MADISON PARK BEGINNERS",
+  "wheelchair": true,
+  "day": ["Wednesday", "Thursday"],
+  "start": ["10:00 AM", "5:30 PM"],
+  "end": ["11:00 AM", "6:30 PM"],
+  "type": ["B", "B"],
+  "spinterest": ["null", "null"],
+  "zone": 3
+}, {
+  "address": "155 E 22ND ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7384244",
+    "Longitude": "-73.9840055"
+  },
+  "location": "Gustavus Adolphus Church",
+  "group": "MANHATTAN",
+  "wheelchair": false,
+  "day": ["Tuesday", "Friday"],
+  "start": ["7:00 PM", "7:00 PM"],
+  "end": ["8:00 PM", "8:15 PM"],
+  "type": ["B", "S"],
+  "spinterest": ["null", "null"],
+  "zone": 3
+}, {
+  "address": "7 E 10TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7332068",
+    "Longitude": "-73.9946888"
+  },
+  "location": "Bronfman Center",
+  "group": "N.Y.U. (NOW YOU UNDERSTAND)",
+  "wheelchair": false,
+  "day": ["Friday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+  "start": ["12:30 PM", "12:30 PM", "12:30 PM", "12:30 PM", "12:30 PM", "2:00 PM", "2:00 PM", "2:00 PM", "2:00 PM", "2:00 PM"],
+  "end": ["1:30 PM", "1:30 PM", "1:30 PM", "1:30 PM", "1:30 PM", "3:00 PM", "3:00 PM", "3:00 PM", "3:00 PM", "3:00 PM"],
+  "type": ["S", "C", "BB", "B", "C", "B", "C", "S", "BB", "C"],
+  "spinterest": ["null", "null", "null", "null", "null", "null", "Promises", "null", "null", "null"],
+  "zone": 3
+}, {
+  "address": "315 W 22ND ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7450587",
+    "Longitude": "-73.9997029"
+  },
+  "location": "German Evangelist Lutheran Church of St. Paul",
+  "group": "NEVER HAD A LEGAL DRINK",
+  "wheelchair": false,
+  "day": ["Thursday"],
+  "start": ["8:00 PM"],
+  "end": ["9:00 PM"],
+  "type": ["OD"],
+  "spinterest": ["Young People"],
+  "zone": 3
+}, {
+  "address": "15 RUTHERFORD PL, New York, NY",
+  "latLon": {
+    "Latitude": "40.7337834",
+    "Longitude": "-73.985098"
+  },
+  "location": "Friends Meeting House",
+  "group": "NEW LIFE IN SOBRIETY",
+  "wheelchair": false,
+  "day": ["Friday", "Monday", "Friday"],
+  "start": ["7:00 PM", "7:00 PM", "8:30 PM"],
+  "end": ["8:00 PM", "8:30 PM", "9:30 PM"],
+  "type": ["B", "S", "C"],
+  "spinterest": ["null", "null", "null"],
+  "zone": 3
+}, {
+  "address": "25 E 15TH CONFERENCE, New York, NY",
+  "latLon": {
+    "Latitude": "40.7361047",
+    "Longitude": "-73.9914936"
+  },
+  "location": "The Realization Center",
+  "group": "NINJAS IN RECOVERY",
+  "wheelchair": false,
+  "day": ["Wednesday"],
+  "start": ["8:00 PM"],
+  "end": ["9:00 PM"],
+  "type": ["S"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "175 9TH AVE, New York, NY",
+  "latLon": {
+    "Latitude": "40.6717748",
+    "Longitude": "-73.9913909"
+  },
+  "location": "General Theological Seminary",
+  "group": "NINTH AVENUE (:II)",
+  "wheelchair": false,
+  "day": ["Friday", "Friday", "Friday", "Friday", "Friday", "Friday", "Friday", "Friday"],
+  "start": ["6:00 PM", "6:00 PM", "6:00 PM", "7:15 PM", "7:15 PM", "7:15 PM", "7:15 PM", "8:30 PM"],
+  "end": ["7:00 PM", "7:00 PM", "7:00 PM", "8:15 PM", "8:15 PM", "8:15 PM", "8:15 PM", "9:30 PM"],
+  "type": ["B", "C", "OD", "BB", "C", "C", "O", "C"],
+  "spinterest": ["null", "null", "Eleventh Step Meditation", "null", "H.I.V Positive", "null", "null", "null"],
+  "zone": 3
+}, {
+  "address": "19 UNION SQ W, New York, NY",
+  "latLon": {
+    "Latitude": "40.7360864",
+    "Longitude": "-73.9912277"
+  },
+  "location": "The Realization Center",
+  "group": "OADW (ONCE A DRUNK WOMAN)",
+  "wheelchair": true,
+  "day": ["Tuesday"],
+  "start": ["8:00 PM"],
+  "end": ["9:00 PM"],
+  "type": ["C"],
+  "spinterest": ["Women"],
+  "zone": 3
+}, {
+  "address": "155 E 22ND ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7384244",
+    "Longitude": "-73.9840055"
+  },
+  "location": "Gustavus Adolphus Church",
+  "group": "P.A.X",
+  "wheelchair": false,
+  "day": ["Monday", "Monday", "Tuesday", "Thursday", "Tuesday"],
+  "start": ["6:45 PM", "6:45 PM", "6:45 PM", "6:45 PM", "6:45 PM"],
+  "end": ["7:45 PM", "7:45 PM", "7:45 PM", "7:45 PM", "7:45 PM"],
+  "type": ["B", "BB", "S", "C", "C"],
+  "spinterest": ["Men", "Men", "Men", "Men", "Men"],
+  "zone": 3
+}, {
+  "address": "423 E 23RD ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7368113",
+    "Longitude": "-73.9772015"
+  },
+  "location": "Veterans Administration Hospital",
+  "group": "POT LUCK",
+  "wheelchair": true,
+  "day": ["Saturday"],
+  "start": ["9:00 PM"],
+  "end": ["10:00 PM"],
+  "type": ["OD"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "209 E 16TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7345135",
+    "Longitude": "-73.9854432"
+  },
+  "location": "St. George''s Church",
+  "group": "POTPOURRI",
+  "wheelchair": false,
+  "day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+  "start": ["6:00 PM", "6:00 PM", "6:00 PM", "6:00 PM", "6:00 PM"],
+  "end": ["6:00 PM", "7:00 PM", "7:00 PM", "7:00 PM", "7:00 PM"],
+  "type": ["O", "S", "BB", "C", "B"],
+  "spinterest": ["null", "null", "null", "null", "null"],
+  "zone": 3
+}, {
+  "address": "411 E 12TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.729824",
+    "Longitude": "-73.982816"
+  },
+  "location": "",
+  "group": "PRIMETIME NYC (II)",
+  "wheelchair": false,
+  "day": ["Sunday"],
+  "start": ["1:30 PM"],
+  "end": ["2:30 PM"],
+  "type": ["OD"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "209 E 16TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7345135",
+    "Longitude": "-73.9854432"
+  },
+  "location": "St. George''s Church",
+  "group": "SATURDAY BEGINNERS",
+  "wheelchair": false,
+  "day": ["Saturday", "Saturday"],
+  "start": ["10:30 AM", "10:30 AM"],
+  "end": ["11:30 AM", "11:30 AM"],
+  "type": ["B", "BB"],
+  "spinterest": ["null", "null"],
+  "zone": 3
+}, {
+  "address": "239 E 21ST ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7369141",
+    "Longitude": "-73.9823276"
+  },
+  "location": "Epiphany Roman Catholic Church",
+  "group": "SATURDAY WEEKENDERS",
+  "wheelchair": false,
+  "day": ["Saturday"],
+  "start": ["10:00 AM"],
+  "end": ["11:00 AM"],
+  "type": ["C"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "12 W 12TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7348062",
+    "Longitude": "-73.9951634"
+  },
+  "location": "First Presbyterian Church",
+  "group": "SAVE HER A SEAT",
+  "wheelchair": true,
+  "day": ["Friday", "Tuesday"],
+  "start": ["6:30 PM", "7:15 PM"],
+  "end": ["7:45 PM", "8:30 PM"],
+  "type": ["B", "C"],
+  "spinterest": ["Women", "Women"],
+  "zone": 3
+}, {
+  "address": "44 2ND AVE, New York, NY",
+  "latLon": {
+    "Latitude": "40.7251086",
+    "Longitude": "-73.9899858"
+  },
+  "location": "Church of the Nativity",
+  "group": "SECOND AVENUE CLEAN AND DRY",
+  "wheelchair": false,
+  "day": ["Sunday"],
+  "start": ["5:00 PM"],
+  "end": ["6:00 PM"],
+  "type": ["C"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "208 W 13TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7381228",
+    "Longitude": "-74.0010304"
+  },
+  "location": "Lesbian, Gay, Bi-Sexual &amp; Transgender Community Center",
+  "group": "SOBER MIRACLES",
+  "wheelchair": false,
+  "day": ["Saturday"],
+  "start": ["9:30 PM"],
+  "end": ["10:30 PM"],
+  "type": ["OD"],
+  "spinterest": ["Special Purpose Groups"],
+  "zone": 3
+}, {
+  "address": "12 W 11TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7341868",
+    "Longitude": "-73.9957178"
+  },
+  "location": "Church of the Ascension Parish House",
+  "group": "SOBRIETY ON THE SQUARE",
+  "wheelchair": false,
+  "day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+  "start": ["7:30 AM", "7:30 AM", "7:30 AM", "7:30 AM", "7:30 AM", "7:30 AM"],
+  "end": ["8:30 AM", "8:30 AM", "8:30 AM", "8:30 AM", "8:30 AM", "8:30 AM"],
+  "type": ["B", "S", "C", "BB", "OD", "S"],
+  "spinterest": ["null", "null", "null", "null", "null", "null"],
+  "zone": 3
+}, {
+  "address": "116 W 11TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7357033",
+    "Longitude": "-73.9992718"
+  },
+  "location": "PS 41 Elementary School",
+  "group": "SPEAKER MAGIC",
+  "wheelchair": false,
+  "day": ["Friday"],
+  "start": ["7:00 PM"],
+  "end": ["8:00 PM"],
+  "type": ["O"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "80 5TH AVE, New York, NY",
+  "latLon": {
+    "Latitude": "40.7358709",
+    "Longitude": "-73.9939317"
+  },
+  "location": "",
+  "group": "STRAIGHT 12 (:II)DOWNTOWN SATURDAY NIGHT",
+  "wheelchair": true,
+  "day": ["Saturday"],
+  "start": ["6:15 PM"],
+  "end": ["7:15 PM"],
+  "type": ["C"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "116 W 11TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7357033",
+    "Longitude": "-73.9992718"
+  },
+  "location": "P.S. 41 (see footnote re: temp location)",
+  "group": "SUNDAY AT SIX",
+  "wheelchair": true,
+  "day": ["Sunday"],
+  "start": ["6:00 PM"],
+  "end": ["7:00 PM"],
+  "type": ["BB"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "155 E 22ND ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7384244",
+    "Longitude": "-73.9840055"
+  },
+  "location": "Gustavus Adolphus Church",
+  "group": "SUNDAY MORNING MEDITATION",
+  "wheelchair": false,
+  "day": ["Sunday"],
+  "start": ["9:00 AM"],
+  "end": ["10:00 AM"],
+  "type": ["C"],
+  "spinterest": ["Meditation"],
+  "zone": 3
+}, {
+  "address": "319 EAST 24TH ST, New York, NY",
+  "latLon": {
+    "Latitude":"40.7380755",
+    "Longitude":"-73.9789197"
+  },
+  "location": "East Midtown Plaza (Community Room H)",
+  "group": "SUNDAY NOONERS",
+  "wheelchair": true,
+  "day": ["Sunday"],
+  "start": ["12:30 PM"],
+  "end": ["1:30 PM"],
+  "type": ["OD"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "10 E UNION SQ, New York, NY",
+  "latLon": {
+    "Latitude": "40.7348335",
+    "Longitude": "-73.9897815"
+  },
+  "location": "Beth Israel Hospital @ Karpas Cancer Center Library",
+  "group": "SURVIVORS IN SOBRIETY",
+  "wheelchair": true,
+  "day": ["Tuesday"],
+  "start": ["7:00 PM"],
+  "end": ["8:00 PM"],
+  "type": ["OD"],
+  "spinterest": ["Special Purpose Groups"],
+  "zone": 3
+}, {
+  "address": "206-208 E 11TH ST, New York, NY",
+  "latLon": {
+    "Latitude":"40.7309636",
+    "Longitude":"-73.9880637"
+  },
+  "location": "All Saints Ukrainian Orthodox Church",
+  "group": "SVOBODA",
+  "wheelchair": false,
+  "day": ["Sunday", "Monday", "Tuesday"],
+  "start": ["7:00 PM", "7:00 PM", "9:00 PM"],
+  "end": ["8:00 PM", "8:15 PM", "10:00 PM"],
+  "type": ["C", "B", "OD"],
+  "spinterest": ["As Bill Sees It", "null", "null"],
+  "zone": 3
+}, {
+  "address": "123 E 15TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7346341",
+    "Longitude": "-73.9879773"
+  },
+  "location": "Seafarers &amp; International House",
+  "group": "T.G.I.F. & S.",
+  "wheelchair": true,
+  "day": ["Friday", "Friday", "Sunday", "Friday"],
+  "start": ["7:30 PM", "7:30 PM", "8:30 PM", "8:45 PM"],
+  "end": ["8:30 PM", "8:30 PM", "9:30 PM", "9:45 PM"],
+  "type": ["B", "OD", "O", "S"],
+  "spinterest": ["null", "null", "null", "null"],
+  "zone": 3
+}, {
+  "address": "411 E 12TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.729824",
+    "Longitude": "-73.982816"
+  },
+  "location": "",
+  "group": "THE 12th STREET WORKSHOP",
+  "wheelchair": false,
+  "day": [ "Wednesday", "Thursday", "Wednesday", "Tuesday", "Monday", "Saturday", "Friday", "Sunday", "Saturday", "Sunday", "Friday", "Thursday", "Wednesday", "Tuesday", "Monday", "Saturday", "Sunday", "Monday", "Friday", "Thursday", "Wednesday", "Tuesday", "Monday", "Saturday", "Sunday", "Monday", "Friday", "Thursday", "Wednesday", "Tuesday", "Saturday", "Sunday", "Monday", "Friday", "Thursday", "Wednesday", "Tuesday", "Saturday", "Sunday", "Monday", "Friday", "Thursday", "Wednesday", "Tuesday", "Saturday", "Sunday", "Tuesday", "Monday", "Friday", "Thursday", "Wednesday", "Sunday", "Saturday", "Monday", "Thursday", "Wednesday", "Tuesday", "Friday"],
+  "start": ["12:00 AM", "6:15 AM", "7:30 AM", "7:30 AM", "7:30 AM", "7:30 AM", "7:30 AM", "7:30 AM", "7:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:00 AM", "10:00 AM", "10:00 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:15 AM", "12:30 PM", "12:30 PM", "12:30 PM", "12:30 PM", "12:30 PM", "1:15 PM", "1:30 PM", "2:00 PM", "2:00 PM", "2:00 PM", "2:00 PM", "2:00 PM", "2:30 PM", "3:00 PM", "4:00 PM", "4:00 PM", "4:00 PM", "4:00 PM", "4:00 PM", "4:30 PM", "4:30 PM", "5:30 PM", "5:30 PM", "5:30 PM", "5:30 PM", "5:30 PM", "6:00 PM", "6:00 PM", "7:00 PM", "7:00 PM", "7:00 PM", "7:00 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:15 PM", "8:15 PM", "8:30 PM", "8:30 PM", "8:30 PM"],
+  "end": ["7:15 AM", "8:30 AM", "8:30 AM", "8:30 AM", "8:30 AM", "8:30 AM", "8:30 AM", "8:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:00 AM", "11:00 AM", "11:00 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:15 PM", "1:30 PM", "1:30 PM", "1:30 PM", "1:30 PM", "1:30 PM", "2:15 PM", "2:30 PM", "3:00 PM", "3:00 PM", "3:00 PM", "3:00 PM", "3:00 PM", "3:30 PM", "4:00 PM", "5:00 PM", "5:00 PM", "5:00 PM", "5:00 PM", "5:00 PM", "5:30 PM", "5:30 PM", "6:30 PM", "6:30 PM", "6:30 PM", "6:30 PM", "6:30 PM", "7:00 PM", "7:00 PM", "8:00 AM", "8:00 PM", "8:00 PM", "8:00 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:15 PM", "9:15 PM", "9:30 PM", "9:30 PM", "9:30 PM"],
+  "type": [ "C", "OD", "S", "OD", "OD", "C", "OD", "S", "OD", "OD", "OD", "BB", "OD", "OD", "S", "S", "BB", "BB", "OD", "B", "B", "BB", "S", "C", "OD", "S", "S", "OD", "O", "OD", "B", "S", "OD", "OD", "OD", "OD", "OD", "OD", "OD", "C", "S", "O", "OD", "S", "B", "OD", "S", "T", "S", "BB", "C", "S", "C", "OD", "C", "S", "C", "B"],
+  "spinterest": [ "null", "null", "null", "null", "null", "null", "null", "null", "null", "null", "null", "null", "null", "null", "Steps 1-2-3", "null", "null", "null", "null", "null", "null", "null", "null", "Sponsorship Workshop", "null", "null", "null", "null", "null", "null", "null", "Fourth Step Workshop", "null", "null", "null", "null", "null", "null", "null", "null", "null", "null", "null", "First Step Workshop", "null", "Gay Men", "null", "null", "null", "null", "null", "null", "Promises", "null", "Women", "null", "Living Sober", "First Step Workshop"],
+  "zone": 3
+}, {
+  "address": "125 W 14TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7379244",
+    "Longitude": "-73.9976813"
+  },
+  "location": "McBurney YMCA",
+  "group": "THE FELLOWSHIP CLUB",
+  "wheelchair": true,
+  "day": ["Friday"],
+  "start": ["7:00 PM"],
+  "end": ["8:00 PM"],
+  "type": ["B"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "208 W 13TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7381228",
+    "Longitude": "-74.0010304"
+  },
+  "location": "LGBT Community Center",
+  "group": "TRANSGENDER FOCUS",
+  "wheelchair": true,
+  "day": ["Sunday"],
+  "start": ["4:00 PM"],
+  "end": ["5:00 PM"],
+  "type": ["C"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "10 UNION SQ E, New York, NY",
+  "latLon": {
+    "Latitude": "40.7348335",
+    "Longitude": "-73.9897815"
+  },
+  "location": "Beth Israel Phillips Ambulatory Center",
+  "group": "TWELVE AT SIX",
+  "wheelchair": true,
+  "day": ["Friday"],
+  "start": ["6:00 PM"],
+  "end": ["7:00 PM"],
+  "type": ["S"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "155 W 22ND ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7431787",
+    "Longitude": "-73.9952777"
+  },
+  "location": "St. Francis Residence",
+  "group": "UPON AWAKENING",
+  "wheelchair": true,
+  "day": ["Sunday"],
+  "start": ["12:45 PM"],
+  "end": ["1:45 PM"],
+  "type": ["S"],
+  "spinterest": ["Eleventh Step"],
+  "zone": 3
+}, {
+  "address": "208 W 13TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7381228",
+    "Longitude": "-74.0010304"
+  },
+  "location": "Lesbian, Gay, Bi-Sexual &amp; Transgender Community Center",
+  "group": "VILLAGE AGNOSTICS",
+  "wheelchair": false,
+  "day": ["Sunday", "Sunday"],
+  "start": ["4:00 PM", "5:30 PM"],
+  "end": ["5:00 PM", "6:30 PM"],
+  "type": ["C", "S"],
+  "spinterest": ["Agnostic", "Agnostic"],
+  "zone": 3
+}, {
+  "address": "12 W 12TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7348062",
+    "Longitude": "-73.9951634"
+  },
+  "location": "First Presbyterian Church",
+  "group": "VILLAGE OPEN DISCUSSION(V.O.D.)",
+  "wheelchair": true,
+  "day": ["Tuesday"],
+  "start": ["6:30 PM"],
+  "end": ["7:30 PM"],
+  "type": ["OD"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "20 WASHINGTON SQ N, New York, NY",
+  "latLon": {
+    "Latitude": "40.7319436",
+    "Longitude": "-73.9977667"
+  },
+  "location": "The Caring Community",
+  "group": "VILLAGE SOBER",
+  "wheelchair": true,
+  "day": ["Thursday"],
+  "start": ["3:30 PM"],
+  "end": ["4:30 PM"],
+  "type": ["C"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "344 E 14TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7314102",
+    "Longitude": "-73.9832013"
+  },
+  "location": "14th Street Y",
+  "group": "WEEKENDERS",
+  "wheelchair": true,
+  "day": ["Sunday"],
+  "start": ["10:00 AM"],
+  "end": ["11:00 AM"],
+  "type": ["S"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "155 W 22ND ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7431787",
+    "Longitude": "-73.9952777"
+  },
+  "location": "St. Francis Residence",
+  "group": "WEST 22nd STREET SOBRIETY",
+  "wheelchair": false,
+  "day": ["Tuesday"],
+  "start": ["6:00 PM"],
+  "end": ["7:00 PM"],
+  "type": ["C"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "208 W 13TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7381228",
+    "Longitude": "-74.0010304"
+  },
+  "location": "Lesbian, Gay, Bi-Sexual &amp; Transgender Community Center",
+  "group": "WESTWINGERS",
+  "wheelchair": true,
+  "day": ["Tuesday", "Thursday"],
+  "start": ["7:30 PM", "9:00 PM"],
+  "end": ["8:30 PM", "10:00 PM"],
+  "type": ["OD", "OD"],
+  "spinterest": ["Gay, Lesbian and Bisexual", "Gay, Lesbian and Bisexual"],
+  "zone": 3
+}, {
+  "address": "602 E 9TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7260409",
+    "Longitude": "-73.9800393"
+  },
+  "location": "Trinity Lutheran Church",
+  "group": "WHOLESALE MIRACLES",
+  "wheelchair": true,
+  "day": ["Tuesday"],
+  "start": ["7:30 PM"],
+  "end": ["8:30 PM"],
+  "type": ["BB"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "208 W 13TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7381228",
+    "Longitude": "-74.0010304"
+  },
+  "location": "Gay, Lesbian, Bi-Sexual &amp; Transgender Community Center",
+  "group": "WOMEN NOW",
+  "wheelchair": false,
+  "day": ["Tuesday"],
+  "start": ["6:00 PM"],
+  "end": ["7:00 PM"],
+  "type": ["C"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "208 W 13TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7381228",
+    "Longitude": "-74.0010304"
+  },
+  "location": "Lesbian, Gay, Bi-Sexual &amp; Transgender Community Center",
+  "group": "WOMEN TOGETHER(:I)",
+  "wheelchair": true,
+  "day": ["Saturday"],
+  "start": ["6:00 PM"],
+  "end": ["7:00 PM"],
+  "type": ["C"],
+  "spinterest": ["Lesbian"],
+  "zone": 3
+}, {
+  "address": "19 UNION SQ W, New York, NY",
+  "latLon": {
+    "Latitude": "40.7360864",
+    "Longitude": "-73.9912277"
+  },
+  "location": "Realization Center",
+  "group": "WOMEN''S SATURDAY ELEVENTH STEP MEDITATION",
+  "wheelchair": true,
+  "day": ["Saturday"],
+  "start": ["11:00 AM"],
+  "end": ["12:00 PM"],
+  "type": ["C"],
+  "spinterest": ["null"],
+  "zone": 3
+}, {
+  "address": "173 E 3RD ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7233431",
+    "Longitude": "-73.9843062"
+  },
+  "location": "Most Holy Redeemer Church",
+  "group": "WORKS IN PROGRESS",
+  "wheelchair": false,
+  "day": ["Monday"],
+  "start": ["7:00 PM"],
+  "end": ["8:00 PM"],
+  "type": ["OD"],
+  "spinterest": ["AA Literature"],
+  "zone": 3
+}, {
+  "address": "50 E 7TH ST, New York, NY",
+  "latLon": {
+    "Latitude": "40.7276522",
+    "Longitude": "-73.9875923"
+  },
+  "location": "Middle Collegiate Church",
+  "group": "YOUNG AND WISE",
+  "wheelchair": false,
+  "day": ["Friday"],
+  "start": ["8:00 PM"],
+  "end": ["9:30 PM"],
+  "type": ["C"],
+  "spinterest": ["Young People"],
+  "zone": 3
+}]

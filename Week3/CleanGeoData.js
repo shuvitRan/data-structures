@@ -19,6 +19,10 @@ data.forEach(function(value) {
     , 'Lng':+value.OutputGeocodes[0].OutputGeocode.Longitude}};
     
     
+    //     AAinput ={'address': value.InputAddress.StreetAddress
+    // , 'Lat':+value.OutputGeocodes[0].OutputGeocode.Latitude
+    // , 'Lng':+value.OutputGeocodes[0].OutputGeocode.Longitude};
+    
     
     //AAinput+= , 'latLong':{'Lat':+value.OutputGeocodes[0].OutputGeocode.Latitude
    // AAinput+= , 'Lng':+value.OutputGeocodes[0].OutputGeocode.Longitude}};
@@ -30,5 +34,5 @@ data.forEach(function(value) {
 
 
 console.log(cleanData);
-fs.writeFileSync('data/M10CleanData.json', JSON.stringify(cleanData));
+fs.writeFileSync('data/M10CleanSimpleData.json', JSON.stringify(cleanData));
 console.log(JSON.stringify(cleanData));

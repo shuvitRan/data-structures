@@ -1,11 +1,16 @@
+require('dotenv').config()
 var request = require('request'); // npm install request
 var async = require('async'); // npm install async
 var fs = require('fs');
 
-var apiKey = process.env.TAMU_KEY; 
-
+var apiKey = process.env.GEO_KEY; //api key in linux
+console.log(apiKey);
 var meetingsData = [];
-var addresses = ["63 Fifth Ave", "16 E 16th St", "2 W 13th St"];
+var content = fs.readFileSync("data/06AAInfo.json");
+var addresses=JSON.parse(content);
+
+
+
 
 // eachSeries in the async module iterates over an array and operates on each item in the array in series
 async.eachSeries(addresses, function(value, callback) {
@@ -24,13 +29,13 @@ async.eachSeries(addresses, function(value, callback) {
             thisGeo.long=tamuGeo['OutputGeocodes'][0]['OutputGeocode']['Longitude'];
             thisGeo.streetAddress=tamuGeo['InputAddress']['StreetAddress'];
             console.log(tamuGeo['FeatureMatchingResultType']);
-            console.log(tamuGeo['OutputGeocodes'][0]['OutputGeocode']['Latitude'],['OutputGeocodes'][0]['OutputGeocode']['Longitude'] );
+           // console.log(tamuGeo['OutputGeocodes'][0]['OutputGeocode']['Latitude'],['OutputGeocodes'][0]['OutputGeocode']['Longitude'] );
             meetingsData.push(thisGeo);
         }
     });
-    setTimeout(callback, 2000);
+    setTimeout(callback, 1000);
 }, function() {
-    fs.writeFileSync('first.json', JSON.stringify(meetingsData));
+    fs.writeFileSync('M06GeoData.json', JSON.stringify(meetingsData));
     console.log('*** *** *** *** ***');
     console.log('Number of meetings in this zone: ');
     console.log(meetingsData.length);
