@@ -95,7 +95,8 @@ $('td[style="border-bottom:1px solid #e3e3e3;width:350px;"]').each(
 // type $ special interest
  $('td[style="border-bottom\\:1px solid #e3e3e3;width\\:350px;"]').each(function(i,elem){
     // var typeonly = $(this).text().trim().replace(/\A*.*Type /g, '').replace(/=\\?.*/g, '').replace(/\s+/g,' ').trim().split(" ");
-    var sections = $(this).text().trim().replace(/\A*.*Meeting /g, '').split(/\s\s+/g)//.replace(/=\\?.*/g, '')//.trim().split(" ");
+    //var sections = $(this).text().trim().replace(/\A*.*Meeting /g, '').split(/\s\s+/g)//.replace(/=\\?.*/g, '')//.trim().split(" ");
+    var sections = $(this).text().replace(/\A*.*From /g, '').trim().split(/\s\s+/g);
         var typeofAA=[];
         var specialIn=[];
        var tpStr = "Type";
@@ -127,4 +128,4 @@ for (var i=0; i<mZone.length; i++){
 console.log(mZone);
 console.log(mZone.length);
 
-fs.writeFileSync('data/M06CleanData.json', JSON.stringify(mZone));
+//fs.writeFileSync('data/M06CleanData.json', JSON.stringify(mZone));
