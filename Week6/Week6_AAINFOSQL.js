@@ -42,9 +42,9 @@ client.connect();
 
 
 //query array obj
-//var thisQuery = "SELECT mtgroup, mtspin, mtzone, mtlocation, address, mttype FROM aainfo WHERE 'Monday' = ANY (mtdate)";
-var thisQuery = "SELECT mtgroup, mtspin, mtzone, mtlocation, address, mttype FROM aainfo WHERE  'Women'= ANY(mtspin) ";
-//var thisQuery = "SELECT COUNT(*) FROM aainfo WHERE mtzone=7;";
+var thisQuery = "SELECT mtgroup, mtspin, mtzone, mtlocation, address, mttype FROM aainfo WHERE 'Monday' = ANY (mtdate)";
+//var thisQuery = "SELECT mtgroup, mtspin, mtzone, mtlocation, address, mttype FROM aainfo WHERE  'Women'= ANY(mtspin) ";
+//var thisQuery = "SELECT * FROM aainfo WHERE mtzone=7;";
 
 client.query(thisQuery, (err, res) => {
     if (err) {throw err}

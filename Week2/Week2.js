@@ -56,7 +56,7 @@ $('td[style="border-bottom:1px solid #e3e3e3; width:260px"]').each(function(i, e
      // fix the json format
      LDArr.push(LocationAddress);
      // write to a CSV file
-    // AAInfoCSV.write(`${locationName}, ${eventName}, ${LocationAddress} \n`);
+     AAInfoCSV.write(`${locationName}, ${eventName}, ${LocationAddress} \n`);
   
 });
 

@@ -5,13 +5,16 @@ var diaryEntries = [];
 
 require('dotenv').config({ path: '../.env' });
 var async = require('async');
-
 var AWS = require('aws-sdk');
 AWS.config = new AWS.Config();
-// AWS.config.accessKeyId = process.env.AK_IAM;
-// AWS.config.secretAccessKey = process.env.SAK_IAM;
-AWS.config.accessKeyId = process.env.RTAK ;
-AWS.config.secretAccessKey = process.RTSK;
+AWS.config.accessKeyId = process.env.AK_IAM;
+AWS.config.secretAccessKey = process.env.SAK_IAM;
+// console.log(process.env.AK_IAM);
+//  console.log(process.env.SAK_IAM);
+// AWS.config.accessKeyId = process.env.RTAK;
+// AWS.config.secretAccessKey = process.RTSK;
+AWS.config.accessKeyId = process.env.AK_JU;
+AWS.config.secretAccessKey = process.env.SK_JU;
 
 AWS.config.region = "us-east-2";
 
@@ -53,9 +56,13 @@ class DiaryEntry {
    // this.month.N = new Date().getMonth().toString();
   }
 }
+diaryEntries.push(new DiaryEntry("pen", 'October 20, 2018', ["https://github.com/BounceRan/SketchTherapy/blob/master/Sketch/Oct_20_2018.jpg"],["trees"]));
+diaryEntries.push(new DiaryEntry("pencil", 'October 24, 2018', ["https://github.com/BounceRan/SketchTherapy/blob/master/Sketch/Oct_24_2018.jpg"],["storyboard for scar 1"]));
+diaryEntries.push(new DiaryEntry("pencil", 'October 26, 2018', ["https://github.com/BounceRan/SketchTherapy/blob/master/Sketch/Oct_26_2018.jpg"],["storyboard for scar 2"]));
+diaryEntries.push(new DiaryEntry("pencil", 'October 27, 2018', ["https://github.com/BounceRan/SketchTherapy/blob/master/Sketch/Oct_27_2018.jpg"],["storyboard for scar 3"]));
+diaryEntries.push(new DiaryEntry("digital", 'October 28, 2018', ["https://github.com/BounceRan/SketchTherapy/blob/master/Sketch/Oct_28_2018.jpg"],["tree study with color"]));
 
-diaryEntries.push(new DiaryEntry("pencil", 'October 14, 2018', ["https://github.com/BounceRan/SketchTherapy/blob/master/Sketch/Oct_14_2018.jpg"],["figure study"]));
-diaryEntries.push(new DiaryEntry("pencil", 'October 18, 2018', ["https://github.com/BounceRan/SketchTherapy/blob/master/Sketch/Oct_18_2018.jpg","https://github.com/BounceRan/SketchTherapy/blob/master/Sketch/Oct_18_2018_2.jpg"],["Storyboard Study","Storyboard Study 2"]));
+//diaryEntries.push(new DiaryEntry("pencil", 'October 26, 2018', ["https://github.com/BounceRan/SketchTherapy/blob/master/Sketch/Oct_26_2018.jpg","https://github.com/BounceRan/SketchTherapy/blob/master/Sketch/Oct_18_2018_2.jpg"],["storyboard for scar","Storyboard Study 2"]));
 //diaryEntries.push(new DiaryEntry("pen", 'October 20, 2018', ["https://github.com/BounceRan/SketchTherapy/blob/master/Sketch/Oct_20_2018.jpg"],["trees"]));
 
 //diaryEntries.push(new DiaryEntry(2, "Third Sketh", ["testingURL","testingURL2","testingURL4"]));
