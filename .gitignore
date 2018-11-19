@@ -8,3 +8,4 @@ node_modules/
 .c9/
 package-lock.json
 .env
+ecosystem.config.js
