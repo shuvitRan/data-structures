@@ -25,9 +25,9 @@ var params = {
     //     "#tp" : "topic"
     // },
     ExpressionAttributeValues: { // the query values
-        ":typeName": {S: "pencil"},
+        ":typeName": {S: "digital"},
         ":minDate": {N: new Date("October 10, 2018").valueOf().toString()},
-        ":maxDate": {N: new Date("October 22, 2018").valueOf().toString()}
+        ":maxDate": {N: new Date("November 22, 2018").valueOf().toString()}
     }
 };
 
