@@ -59,9 +59,9 @@ app.get('/aameetings', function(req, res) {
     const client = new Pool(db_credentials);
     
     // SQL query 
-    var thisQuery = `SELECT address as mtgaddress, mtglocation as location, json_agg(json_build_object('day', mtday, 'timeStart', mtstart)) as meetings
+    var thisQuery = `SELECT address as mtgaddress, mtlocation as location, json_agg(json_build_object('day', mtday, 'timeStart', mtstart)) as meetings
                  FROM aainfoAll 
-                 WHERE mtgday = 'Tuesday' and mtzone = 1 
+                 WHERE mtzone = 1 
                  GROUP BY mtgaddress, location
                  ;`;
 
