@@ -23,8 +23,8 @@ var thisQuery=`
                 FROM (
                     SELECT 
                         sensorValue, sensorTime,
-                        LAG(sensorValue, 1) OVER (ORDER BY sensorTime) AS pSensorValue,
-                        LAG(sensorValue, 1) OVER (ORDER BY sensorTime DESC) AS aSensorValue 
+                        LAG(sensorValue, 1, '0') OVER (ORDER BY sensorTime) AS pSensorValue,
+                        LAG(sensorValue, 1, '0') OVER (ORDER BY sensorTime DESC) AS aSensorValue 
                     FROM sensorData
                 ) AS derivedTable
                 WHERE (sensorValue='1' AND pSensorValue='0') or (sensorValue='1' AND aSensorValue='0')
@@ -33,8 +33,8 @@ var thisQuery=`
                 FROM (
                     SELECT 
                         sensorValue, sensorTime,
-                        LAG(sensorValue, 1) OVER (ORDER BY sensorTime) AS pSensorValue,
-                        LAG(sensorValue, 1) OVER (ORDER BY sensorTime DESC) AS aSensorValue 
+                        LAG(sensorValue, 1, '0') OVER (ORDER BY sensorTime) AS pSensorValue,
+                        LAG(sensorValue, 1, '0') OVER (ORDER BY sensorTime DESC) AS aSensorValue 
                     FROM sensorData
                 ) AS derivedTable
                 WHERE (sensorValue='1' AND pSensorValue='0' AND aSensorValue='0')
@@ -44,7 +44,10 @@ var thisQuery=`
 //只用union的话，会把后面加进来的合并并去掉重复的，只显示一条 而union all 会合并上下的query但是 不去重
 
 var secondQuery = "SELECT COUNT (*) FROM sensorData;"; // print the number of rows
-var thirdQuery = "SELECT sensorValue, COUNT (*) FROM sensorData GROUP BY sensorValue;"; // print the number of rows for each sensorValue
+//var thirdQuery = "SELECT sensorValue, COUNT (*) FROM sensorData GROUP BY sensorValue;"; // print the number of rows for each sensorValue
+//var thirdQuery= "SELECT * FROM sensorData ORDER BY sensorTime ASC LIMIT 1;"
+
+var thirdQuery= "SELECT * FROM sensorData ORDER BY sensorTime DESC LIMIT 20;"
 
 client.query(thisQuery, (err, res) => {
     if (err) {throw err}

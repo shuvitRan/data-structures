@@ -41,8 +41,8 @@ app.get('/sensor', function(req, res) {
                 FROM (
                     SELECT 
                         sensorValue, sensorTime,
-                        LAG(sensorValue, 1) OVER (ORDER BY sensorTime) AS pSensorValue,
-                        LAG(sensorValue, 1) OVER (ORDER BY sensorTime DESC) AS aSensorValue 
+                        LAG(sensorValue, 1, '0') OVER (ORDER BY sensorTime) AS pSensorValue,
+                        LAG(sensorValue, 1, '0') OVER (ORDER BY sensorTime DESC) AS aSensorValue 
                     FROM sensorData
                 ) AS derivedTable
                 WHERE (sensorValue='1' AND pSensorValue='0') or (sensorValue='1' AND aSensorValue='0')
@@ -51,8 +51,8 @@ app.get('/sensor', function(req, res) {
                 FROM (
                     SELECT 
                         sensorValue, sensorTime,
-                        LAG(sensorValue, 1) OVER (ORDER BY sensorTime) AS pSensorValue,
-                        LAG(sensorValue, 1) OVER (ORDER BY sensorTime DESC) AS aSensorValue 
+                        LAG(sensorValue, 1, '0') OVER (ORDER BY sensorTime) AS pSensorValue,
+                        LAG(sensorValue, 1, '0') OVER (ORDER BY sensorTime DESC) AS aSensorValue 
                     FROM sensorData
                 ) AS derivedTable
                 WHERE (sensorValue='1' AND pSensorValue='0' AND aSensorValue='0')
