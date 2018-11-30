@@ -35,11 +35,29 @@ app.get('/sensor', function(req, res) {
     const client = new Pool(db_credentials);
 
     // SQL query 
-    var q = `SELECT EXTRACT(DAY FROM sensorTime) as sensorday,
-             AVG(sensorValue::int) as num_sit
-             FROM sensorData
-             GROUP BY sensorday
-             ORDER BY sensorday;`;
+    var q = ` 
+               
+                SELECT derivedTable.sensorValue, derivedTable.sensorTime
+                FROM (
+                    SELECT 
+                        sensorValue, sensorTime,
+                        LAG(sensorValue, 1) OVER (ORDER BY sensorTime) AS pSensorValue,
+                        LAG(sensorValue, 1) OVER (ORDER BY sensorTime DESC) AS aSensorValue 
+                    FROM sensorData
+                ) AS derivedTable
+                WHERE (sensorValue='1' AND pSensorValue='0') or (sensorValue='1' AND aSensorValue='0')
+                union all  
+                SELECT derivedTable.sensorValue, derivedTable.sensorTime
+                FROM (
+                    SELECT 
+                        sensorValue, sensorTime,
+                        LAG(sensorValue, 1) OVER (ORDER BY sensorTime) AS pSensorValue,
+                        LAG(sensorValue, 1) OVER (ORDER BY sensorTime DESC) AS aSensorValue 
+                    FROM sensorData
+                ) AS derivedTable
+                WHERE (sensorValue='1' AND pSensorValue='0' AND aSensorValue='0')
+                ORDER by sensorTime;
+                `;
 
     client.connect();
     client.query(q, (qerr, qres) => {
@@ -59,10 +77,10 @@ app.get('/aameetings', function(req, res) {
     const client = new Pool(db_credentials);
     
     // SQL query   
-    var thisQuery = `SELECT address as mtgaddress, mtlocation as location, json_agg(json_build_object('day', mtday, 'timeStart', mtstart)) as meetings
+    var thisQuery = `SELECT address as mtgaddress,mtspin, mtlocation as location, json_agg(json_build_object('day', mtday, 'timeStart', mtstart, 'wheelchair', wheelchair)) as meetings
                  FROM aainfoAll 
                  WHERE mtzone = 1 
-                 GROUP BY mtgaddress, location
+                 GROUP BY mtgaddress, location, mtspin
                  ;`;
 
     client.query(thisQuery, (qerr, qres) => {

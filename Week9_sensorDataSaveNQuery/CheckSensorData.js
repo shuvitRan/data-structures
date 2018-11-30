@@ -15,9 +15,33 @@ const client = new Client(db_credentials);
 client.connect();
 
 // Sample SQL statements for checking your work: 
-var thisQuery = "SELECT * FROM sensorData ORDER BY sensorTime ASC LIMIT 1;"; // print all values
-//var thisQuery ="SELECT * FROM sensorData WHERE( sensorValue= true NOT BETWEEN sensorValue=flase AND sensorValue=true);";
-//var thisQuery ="SELECT CASE WHEN( sensorData.sensorValue=true AND LAG(sensorData.sensorValue,1)=false  OVER() )THEN sensorData.sensorValue END FROM sensorData;";
+//var thisQuery = "SELECT * FROM sensorData ORDER BY sensorTime ASC LIMIT 1;"; // print all values
+ //SELECT sensorValue, sensorTime from sensorData order by sensorTime;
+var thisQuery=` 
+               
+                SELECT derivedTable.sensorValue, derivedTable.sensorTime
+                FROM (
+                    SELECT 
+                        sensorValue, sensorTime,
+                        LAG(sensorValue, 1) OVER (ORDER BY sensorTime) AS pSensorValue,
+                        LAG(sensorValue, 1) OVER (ORDER BY sensorTime DESC) AS aSensorValue 
+                    FROM sensorData
+                ) AS derivedTable
+                WHERE (sensorValue='1' AND pSensorValue='0') or (sensorValue='1' AND aSensorValue='0')
+                union all  
+                SELECT derivedTable.sensorValue, derivedTable.sensorTime
+                FROM (
+                    SELECT 
+                        sensorValue, sensorTime,
+                        LAG(sensorValue, 1) OVER (ORDER BY sensorTime) AS pSensorValue,
+                        LAG(sensorValue, 1) OVER (ORDER BY sensorTime DESC) AS aSensorValue 
+                    FROM sensorData
+                ) AS derivedTable
+                WHERE (sensorValue='1' AND pSensorValue='0' AND aSensorValue='0')
+                ORDER by sensorTime;
+                `;
+
+//只用union的话，会把后面加进来的合并并去掉重复的，只显示一条 而union all 会合并上下的query但是 不去重
 
 var secondQuery = "SELECT COUNT (*) FROM sensorData;"; // print the number of rows
 var thirdQuery = "SELECT sensorValue, COUNT (*) FROM sensorData GROUP BY sensorValue;"; // print the number of rows for each sensorValue
