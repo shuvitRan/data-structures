@@ -1,0 +1,9 @@
+AA Meeting:
+The AA meeting information including group name, address, day, time range, special interests, accessibility, and type will be shown in the location pop-up tag. The user can also search by group name or day by using the search bar on the left upper corner to find out the location and detail information about the meeting.
+
+Sketch Therapy(Dear diary) :
+This web-based sketch diary project will be shown the most recent sketches I did. The user can scroll down to check the earlier sketch or they can click the interactive timeline to check the sketch I did in the specific day. Moreover, there is a button on the right which allow user change the sorting option. They can check the sketch by the sketch medium( pen, pencil, digital) or they can sort from the oldest.
+ 
+
+Sensor Data:
+This web-based experimental data visualization project will be shown the data collected by an infrared light sensor which positioned under my daily working desk in my apartment.  The visualization will depict the timeline of my sitting hours from 6am to the second day's 6am. This study of my sitting hours may help me to understand my life routine and realize that I need to get rid of the bad long sitting habit. 

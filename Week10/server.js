@@ -58,7 +58,7 @@ app.get('/aameetings', function(req, res) {
     // Connect to the AWS RDS Postgres database
     const client = new Pool(db_credentials);
     
-    // SQL query 
+    // SQL query   
     var thisQuery = `SELECT address as mtgaddress, mtlocation as location, json_agg(json_build_object('day', mtday, 'timeStart', mtstart)) as meetings
                  FROM aainfoAll 
                  WHERE mtzone = 1 

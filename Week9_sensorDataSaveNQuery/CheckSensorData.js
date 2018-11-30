@@ -15,7 +15,10 @@ const client = new Client(db_credentials);
 client.connect();
 
 // Sample SQL statements for checking your work: 
-var thisQuery = "SELECT * FROM sensorData;"; // print all values
+var thisQuery = "SELECT * FROM sensorData ORDER BY sensorTime ASC LIMIT 1;"; // print all values
+//var thisQuery ="SELECT * FROM sensorData WHERE( sensorValue= true NOT BETWEEN sensorValue=flase AND sensorValue=true);";
+//var thisQuery ="SELECT CASE WHEN( sensorData.sensorValue=true AND LAG(sensorData.sensorValue,1)=false  OVER() )THEN sensorData.sensorValue END FROM sensorData;";
+
 var secondQuery = "SELECT COUNT (*) FROM sensorData;"; // print the number of rows
 var thirdQuery = "SELECT sensorValue, COUNT (*) FROM sensorData GROUP BY sensorValue;"; // print the number of rows for each sensorValue
 
