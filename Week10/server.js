@@ -34,10 +34,10 @@ app.get('/sensor', function(req, res) {
     // Connect to the AWS RDS Postgres database
     const client = new Pool(db_credentials);
 
-    // SQL query 
+    // SQL query //derivedTable.sensorValue, 查看正负值
     var q = ` 
                
-                SELECT derivedTable.sensorValue, derivedTable.sensorTime
+                SELECT  derivedTable.sensorTime
                 FROM (
                     SELECT 
                         sensorValue, sensorTime,
@@ -47,7 +47,7 @@ app.get('/sensor', function(req, res) {
                 ) AS derivedTable
                 WHERE (sensorValue='1' AND pSensorValue='0') or (sensorValue='1' AND aSensorValue='0')
                 union all  
-                SELECT derivedTable.sensorValue, derivedTable.sensorTime
+                SELECT  derivedTable.sensorTime
                 FROM (
                     SELECT 
                         sensorValue, sensorTime,

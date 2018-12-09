@@ -17,7 +17,7 @@ client.connect();
 // Sample SQL statements for checking your work: 
 //var thisQuery = "SELECT * FROM sensorData ORDER BY sensorTime ASC LIMIT 1;"; // print all values
  //SELECT sensorValue, sensorTime from sensorData order by sensorTime;
-/* 
+
 var thisQuery=` 
                
                 SELECT derivedTable.sensorValue, derivedTable.sensorTime
@@ -42,8 +42,9 @@ var thisQuery=`
                 ORDER by sensorTime;
                 `;
 
-*/
 
+
+/*  only showing last time durition
 var thisQuery=` 
                
             SELECT
@@ -72,6 +73,7 @@ var thisQuery=`
                 ORDER by sensorStartTime;
                 
                 `;
+*/
 
 var secondQuery = "SELECT COUNT (*) FROM sensorData;"; // print the number of rows
 //var thirdQuery = "SELECT sensorValue, COUNT (*) FROM sensorData GROUP BY sensorValue;"; // print the number of rows for each sensorValue
