@@ -14,15 +14,8 @@ var totalMin=[]
 // seperatedata();
 // getDay();
 
- 
-
 var state= false;
-
-
-
-
-
-console.log('dothings')
+//console.log('dothings')
 
 function setup(){
  
@@ -40,13 +33,13 @@ function setup(){
     
       })
       .then(function(sensordata){
-        console.log(sensordata);
+        //console.log(sensordata);
         seperatedata();
       getDay();
         
       })
       .then(function(){
-        console.log("third");
+       // console.log("third");
         
          //loadJOSN()
 
@@ -85,7 +78,7 @@ countAvHours();
         state=true;
       }).catch(err=> console.log(err));
       
-      console.log(promise);
+    //  console.log(promise);
  //setTimeout(3000);
 
 };
