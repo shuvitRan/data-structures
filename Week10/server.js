@@ -107,7 +107,9 @@ app.get('/deardiary', function(req, res) {
             "#tp": "typeOfSketch"
         },
         ExpressionAttributeValues: { // the query values
-            ":typeOfS": { S: "digital" }
+            ":typeOfS": { "S": "pencil"}
+            // ":typeOfS": { "S": "pen"}
+                
         }
     };
 
