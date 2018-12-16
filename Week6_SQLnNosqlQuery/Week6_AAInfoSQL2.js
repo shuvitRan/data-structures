@@ -45,7 +45,7 @@ client.connect();
 //var thisQuery = "SELECT address, lat, lng, mtstart, mtend, mtgroup, mtspin, mtday, mtlocation, wheelchair, mtzone FROM aainfoAll WHERE mtstart = '1:00 PM' ";
 //var thisQuery = "SELECT mtgroup, mtspin, mtzone, mtlocation, address, mttype FROM aainfo WHERE  'Women'= ANY(mtspin) ";
 
-
+var thisQuery = "SELECT COUNT(*) FROM aainfoAll";
 
 // var thisQuery = `SELECT lat,lng, mtlocation
 //                     FROM aainfoAll
@@ -53,11 +53,11 @@ client.connect();
 
 
 
-var thisQuery = `UPDATE aainfoAll
-                    SET lat= 40.7843165,
-                        lng= -73.956073
+// var thisQuery = `UPDATE aainfoAll
+//                     SET lat= 40.7843165,
+//                         lng= -73.956073
                         
-                    WHERE  address = '1285 MADISON STATE ROAD NY AVE New York NY ' `;
+//                     WHERE  address = '1285 MADISON STATE ROAD NY AVE New York NY ' `;
                     
                     
 // var secQuery = `SELECT lat,lng, mtlocation

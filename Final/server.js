@@ -21,6 +21,8 @@ AWS.config.secretAccessKey = process.env.SAK_IAM;
 AWS.config.region = "us-east-2";
 
 
+
+//Sensor Data*****************
 app.get('/ss', function(req, res) {
     
     // Connect to the AWS RDS Postgres database

@@ -1,0 +1,36 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  background: rgb(230, 227, 229);
+
+
+}
+
+
+#title{
+     font-family: 'Major Mono Display', monospace;
+     padding:5%;
+}
+
+
+#listwrap    {
+    font-family: 'Quicksand', sans-serif;
+    padding-left: 8%;
+}
+
+li{
+  padding: 15px;
+    transition: background-color 2s;
+    -webkit-transition: background-color 2s;
+  background-color: #ee9f91;
+  display: inline-block;
+  width:160px;
+text-align: center;
+}
+
+li:hover{
+  background-color: #f5b1cc;
+}
+li a{
+  color:rgb(0, 0, 0);
+}

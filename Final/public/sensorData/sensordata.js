@@ -1,5 +1,5 @@
 
-       var sensordata=[ {sensortime: "2018-11-18T18:50:49.947Z"},{sensortime: "2018-11-18T18:52:50.059Z"}] ;
+var sensordata=[ {sensortime: "2018-11-18T18:50:49.947Z"},{sensortime: "2018-11-18T18:52:50.059Z"}] ;
        
 var startTime=[], endTime=[];
 var dayinfo=[];
@@ -14,12 +14,13 @@ var totalMin=[]
 // seperatedata();
 // getDay();
 
+//boolean for draw working on right time
 var state= false;
 //console.log('dothings')
 
 function setup(){
  
- 
+ //fetch talk to the server loading data and wait for it complete
    let promise = fetch('../ss', {method: 'GET'})
     .then(function(response) {
       if(response.ok) return response.json();
@@ -129,7 +130,7 @@ function countAvHours(){
 
 
 
-
+//seperate the data to start and end, put them into two array
 function seperatedata(){
   for(var i=0; i < sensordata.length; i++ ){
     if( i%2 == 0){
@@ -139,7 +140,6 @@ function seperatedata(){
         endTime.push(moment(sensordata[i].sensortime).add(5,'hour'));
       }
   }
-
 
 }
 
@@ -169,7 +169,7 @@ for(var i=0; i < startTime.length; i++ ){
 }
 
 
-
+//this function and class create the line for each sitting period
 function lineForPeriod(startt,dayY){
 
   var x1=map(Number(startTime[startt]-daytimeStart[dayY]), 0 , daytimeEnd[dayY]-daytimeStart[dayY], 0.1*windowWidth,(windowWidth-0.1*windowWidth));
@@ -204,7 +204,7 @@ line(x1,0.1*yheight+dayY*30,x2,0.1*yheight+dayY*30);
 
 
 
-
+// day line class ,generate the day line according to the existing day
 function lineForDay(){
 
 for (var i=0; i<dayinfo.length; i++){
