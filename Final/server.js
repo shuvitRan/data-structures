@@ -3,6 +3,7 @@ var express = require('express'), // npm install express
     app = express();
 const { Pool } = require('pg');
 var AWS = require('aws-sdk');
+var moment = require('moment-timezone');
 
 // AWS RDS credentials
 var db_credentials = new Object();
@@ -166,7 +167,212 @@ app.get('/pen', function(req, res) {
 });
 
 
+//aa meeting------------------------------
+var todayAA=moment().tz("America/New_York").format('dddd');//.utcOffset(5);//.format('dddd');//.day();
+console.log(todayAA);
 
+app.get('/aainit', function(req, res) {
+    
+    // Connect to the AWS RDS Postgres database
+    const client = new Pool(db_credentials);
+    
+    // SQL query   
+    var thisQuery = `SELECT address as mtgaddress,mtspin, mtlocation as location,wheelchair,
+                    json_agg(json_build_object('day', mtday, 'timeStart', mtstart)) as meetings,
+                    lat,lng
+                
+                 FROM aainfoAll 
+                 WHERE mtday = '${todayAA}' 
+                 GROUP BY mtgaddress, location, mtspin, lat,lng,wheelchair
+                 ;`;
+
+    client.query(thisQuery, (qerr, qres) => {
+        if (qerr) { throw qerr }
+        else {
+            res.send(qres.rows);
+            client.end();
+            console.log('2) responded to request for aa meeting data');
+        }
+    });
+});
+
+app.get('/mon', function(req, res) {
+    
+    // Connect to the AWS RDS Postgres database
+    const client = new Pool(db_credentials);
+    
+    // SQL query   
+    var thisQuery = `SELECT address as mtgaddress,mtspin, mtlocation as location,wheelchair,
+                    json_agg(json_build_object('day', mtday, 'timeStart', mtstart)) as meetings,
+                    lat,lng
+                
+                 FROM aainfoAll 
+                 WHERE mtday = 'Monday' 
+                 GROUP BY mtgaddress, location, mtspin, lat,lng,wheelchair
+                 ;`;
+
+    client.query(thisQuery, (qerr, qres) => {
+        if (qerr) { throw qerr }
+        else {
+            res.send(qres.rows);
+            client.end();
+            console.log('2) responded to request for aa meeting data');
+        }
+    });
+});
+
+
+app.get('/tues', function(req, res) {
+    
+    // Connect to the AWS RDS Postgres database
+    const client = new Pool(db_credentials);
+    
+    // SQL query   
+    var thisQuery = `SELECT address as mtgaddress,mtspin, mtlocation as location,wheelchair,
+                    json_agg(json_build_object('day', mtday, 'timeStart', mtstart)) as meetings,
+                    lat,lng
+                
+                 FROM aainfoAll 
+                 WHERE mtday = 'Tuesday'
+                 GROUP BY mtgaddress, location, mtspin, lat,lng,wheelchair
+                 ;`;
+
+    client.query(thisQuery, (qerr, qres) => {
+        if (qerr) { throw qerr }
+        else {
+            res.send(qres.rows);
+            client.end();
+            console.log('2) responded to request for aa meeting data');
+        }
+    });
+});
+
+
+
+app.get('/wes', function(req, res) {
+    
+    // Connect to the AWS RDS Postgres database
+    const client = new Pool(db_credentials);
+    
+    // SQL query   
+    var thisQuery = `SELECT address as mtgaddress,mtspin, mtlocation as location,wheelchair,
+                    json_agg(json_build_object('day', mtday, 'timeStart', mtstart)) as meetings,
+                    lat,lng
+                
+                 FROM aainfoAll 
+                 WHERE mtday = 'Wednesday' 
+                 GROUP BY mtgaddress, location, mtspin, lat,lng,wheelchair
+                 ;`;
+
+    client.query(thisQuery, (qerr, qres) => {
+        if (qerr) { throw qerr }
+        else {
+            res.send(qres.rows);
+            client.end();
+            console.log('2) responded to request for aa meeting data');
+        }
+    });
+});
+
+
+
+app.get('/thr', function(req, res) {
+    
+    // Connect to the AWS RDS Postgres database
+    const client = new Pool(db_credentials);
+    
+    // SQL query   
+    var thisQuery = `SELECT address as mtgaddress,mtspin, mtlocation as location,wheelchair,
+                    json_agg(json_build_object('day', mtday, 'timeStart', mtstart)) as meetings,
+                    lat,lng
+                
+                 FROM aainfoAll 
+                 WHERE mtday = 'Thursday' 
+                 GROUP BY mtgaddress, location, mtspin, lat,lng,wheelchair
+                 ;`;
+
+    client.query(thisQuery, (qerr, qres) => {
+        if (qerr) { throw qerr }
+        else {
+            res.send(qres.rows);
+            client.end();
+            console.log('2) responded to request for aa meeting data');
+        }
+    });
+});
+
+app.get('/fri', function(req, res) {
+    
+    // Connect to the AWS RDS Postgres database
+    const client = new Pool(db_credentials);
+    
+    // SQL query   
+    var thisQuery = `SELECT address as mtgaddress,mtspin, mtlocation as location,wheelchair,
+                    json_agg(json_build_object('day', mtday, 'timeStart', mtstart)) as meetings,
+                    lat,lng
+                
+                 FROM aainfoAll 
+                 WHERE mtday = 'Friday' 
+                 GROUP BY mtgaddress, location, mtspin, lat,lng,wheelchair
+                 ;`;
+
+    client.query(thisQuery, (qerr, qres) => {
+        if (qerr) { throw qerr }
+        else {
+            res.send(qres.rows);
+            client.end();
+            console.log('2) responded to request for aa meeting data');
+        }
+    });
+});
+app.get('/sat', function(req, res) {
+    
+    // Connect to the AWS RDS Postgres database
+    const client = new Pool(db_credentials);
+    
+    // SQL query   
+    var thisQuery = `SELECT address as mtgaddress,mtspin, mtlocation as location,wheelchair,
+                    json_agg(json_build_object('day', mtday, 'timeStart', mtstart)) as meetings,
+                    lat,lng
+                
+                 FROM aainfoAll 
+                 WHERE mtday = 'Saturday' 
+                 GROUP BY mtgaddress, location, mtspin, lat,lng,wheelchair
+                 ;`;
+
+    client.query(thisQuery, (qerr, qres) => {
+        if (qerr) { throw qerr }
+        else {
+            res.send(qres.rows);
+            client.end();
+            console.log('2) responded to request for aa meeting data');
+        }
+    });
+});
+app.get('/sund', function(req, res) {
+    
+    // Connect to the AWS RDS Postgres database
+    const client = new Pool(db_credentials);
+    
+    // SQL query   
+    var thisQuery = `SELECT address as mtgaddress,mtspin, mtlocation as location,wheelchair,
+                    json_agg(json_build_object('day', mtday, 'timeStart', mtstart)) as meetings,
+                    lat,lng
+                
+                 FROM aainfoAll 
+                 WHERE mtday = 'Sunday' 
+                 GROUP BY mtgaddress, location, mtspin, lat,lng,wheelchair
+                 ;`;
+
+    client.query(thisQuery, (qerr, qres) => {
+        if (qerr) { throw qerr }
+        else {
+            res.send(qres.rows);
+            client.end();
+            console.log('2) responded to request for aa meeting data');
+        }
+    });
+});
 
 // serve static files in /public
 //app.use(express.static('public'));

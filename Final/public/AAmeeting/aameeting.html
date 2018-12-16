@@ -1,0 +1,52 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="lib/leaflet/leaflet.css" /> <!-- default styles -->
+  <link rel="stylesheet" href="css/mainstyle.css" />
+</head>
+<body>
+<div id="contentWrapper">
+
+    <p id='mytitle'>AA Manhattan</p>
+    <p id='time'></p>
+    <p id='time2'></p>
+    <p id="describ">Select a day that you want to go for a AA Meeting</p>
+    <div class="dropdown">
+      <button class="dropbtn">Find out</button>
+        <div class="dropdown-content">
+          <a id="mon" >Monday</a>
+          <a id="tues" >Tuesday</a>
+          <a id="wes" >Wednesday</a>
+          <a id="thr" >Thursday</a>
+          <a id="fri" >Friday</a>
+          <a id="sat" >Saturday</a>
+          <a id="sund" >Sunday</a>
+        </div>
+    </div>
+      <!-- <input type="text" id="dayinfo" value="Saturday" autocomplete="on" /> -->
+      <!-- <button onclick = "submitSearch() ">Submit</button> -->
+  </div>
+
+<div id="aa-map"></div>
+
+
+
+
+
+
+
+  <!-- load our dependencies and sketch file -->
+  <script src="lib/leaflet/leaflet.js"></script>
+<script src="lib/moment.js"></script>
+<script src="lib/moment-timezone-with-data.js"></script>
+<!-- <script src="lib/p5.min.js"></script> -->
+  <script src="lib/lodash.min.js"></script>
+  <script src="lib/brewer.js"></script>
+
+  <script src="sketch.js"></script>
+
+
+  <!-- p5.js will create a canvas element here at runtime -->
+</body>
+</html>

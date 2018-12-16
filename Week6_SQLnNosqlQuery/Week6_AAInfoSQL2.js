@@ -42,14 +42,43 @@ client.connect();
    //                                          mtzone SMALLINT
 
 //query array obj
-var thisQuery = "SELECT address, lat, lng, mtstart, mtend, mtgroup, mtspin, mtday, mtlocation, wheelchair, mtzone FROM aainfoAll WHERE mtstart = '1:00 PM' ";
+//var thisQuery = "SELECT address, lat, lng, mtstart, mtend, mtgroup, mtspin, mtday, mtlocation, wheelchair, mtzone FROM aainfoAll WHERE mtstart = '1:00 PM' ";
 //var thisQuery = "SELECT mtgroup, mtspin, mtzone, mtlocation, address, mttype FROM aainfo WHERE  'Women'= ANY(mtspin) ";
-//var thisQuery = "SELECT * FROM aainfo WHERE mtzone=7;";
+
+
+
+// var thisQuery = `SELECT lat,lng, mtlocation
+//                     FROM aainfoAll
+//                     WHERE  address = '141 HENRY ST New York NY ' `;
+
+
+
+var thisQuery = `UPDATE aainfoAll
+                    SET lat= 40.7843165,
+                        lng= -73.956073
+                        
+                    WHERE  address = '1285 MADISON STATE ROAD NY AVE New York NY ' `;
+                    
+                    
+// var secQuery = `SELECT lat,lng, mtlocation
+//                     FROM aainfoAll
+//                     WHERE  address = '5866 W 135TH ST New York NY ' `;
+                    
+                    
 
 client.query(thisQuery, (err, res) => {
     if (err) {throw err}
     else {
         console.table(res.rows);
+        console.log(res);
         client.end();
     }
 });
+
+// client.query(secQuery, (err, res) => {
+//     if (err) {throw err}
+//     else {
+//     console.table(res.rows);
+//     }
+//     client.end();
+// });

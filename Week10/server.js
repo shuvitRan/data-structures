@@ -3,6 +3,9 @@ var express = require('express'), // npm install express
     app = express();
 const { Pool } = require('pg');
 var AWS = require('aws-sdk');
+//var moment= require('moment');
+var moment = require('moment-timezone');
+
 
 // AWS RDS credentials
 var db_credentials = new Object();
@@ -70,6 +73,11 @@ app.get('/sensor', function(req, res) {
     });
 });
 
+var todayAA=moment().tz("America/New_York").format('dddd');//.utcOffset(5);//.format('dddd');//.day();
+console.log(todayAA);
+
+ //WHERE mtday = '${todayAA}' AND mtzone = 3
+
 // respond to requests for /aameetings
 app.get('/aameetings', function(req, res) {
     
@@ -77,10 +85,14 @@ app.get('/aameetings', function(req, res) {
     const client = new Pool(db_credentials);
     
     // SQL query   
-    var thisQuery = `SELECT address as mtgaddress,mtspin, mtlocation as location, json_agg(json_build_object('day', mtday, 'timeStart', mtstart, 'wheelchair', wheelchair)) as meetings
+    var thisQuery = `SELECT address as mtgaddress,mtspin, mtlocation as location,wheelchair,
+                    json_agg(json_build_object('day', mtday, 'timeStart', mtstart)) as meetings,
+                    lat,lng
+                
                  FROM aainfoAll 
-                 WHERE mtzone = 1 
-                 GROUP BY mtgaddress, location, mtspin
+                
+                 WHERE mtday = 'Tuesday' AND mtzone = 3
+                 GROUP BY mtgaddress, location, mtspin, lat,lng,wheelchair
                  ;`;
 
     client.query(thisQuery, (qerr, qres) => {
