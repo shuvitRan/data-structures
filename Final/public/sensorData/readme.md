@@ -14,12 +14,13 @@ The front end design will be only showing the time period of my sitting. Thus, o
 ![sensordata](https://github.com/BounceRan/data-structures/blob/master/Final/public/sensorData/doc/sensorData.png)
 
 All the front end component is dynamic, and the timeline UI is created by using P5.js. According to the querying data from the server, the canvas will generate the right width and height to contain all the timelines. 
----
+
+****
 
 ### More
 Another big section for this project is the front end design and development. There are many works in recalculating the timestamp according to the data return from the server. With the help of the moment.js library, I created functions such as finding out how many recording days exist, comparing and remaping each period into the right positions.  
 
-## Front-End Logic:
+### Front-End Logic:
 1. waiting Fetch to get sitting data from the server.
 2. separate the data to starting point array and ending point array.
 3. compare the date, find out how many days are in the records.
@@ -28,7 +29,8 @@ Another big section for this project is the front end design and development. Th
 6. calculate the sitting hours for each day.
 7. calculate the average sitting hours. 
 
+*****
+### Final Implementation
 
 ![finalImplementation](https://github.com/BounceRan/data-structures/blob/master/Final/public/sensorData/doc/SensorFinalIm.png)
 
-# Final Implementation
