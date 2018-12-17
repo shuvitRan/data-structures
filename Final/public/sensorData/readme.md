@@ -13,3 +13,12 @@ All the front end component is dynamic, and the timeline UI is created by using 
 
 ### More
 Another big section for this project is the front end design and development. There are many works in recalculating the timestamp according to the data return from the server. With the help of the moment.js library, I created functions such as finding out how many recording days exist, comparing and remaping each period into the right positions.  
+
+## Front-End Logic:
+1. waiting Fetch to get sitting data from the server.
+2. separate the data to starting point array and ending point array.
+3. compare the date, find out how many days are in the records.
+4. draw the lines for each day(start from 6 am to the next day’s 6 am).
+5. compare the day and put start and end point on the right day. 
+6. calculate the sitting hours for each day.
+7. calculate the average sitting hours. 

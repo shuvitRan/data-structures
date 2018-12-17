@@ -67,7 +67,7 @@ app.get('/ss', function(req, res) {
 });
 
 
-// respond to requests for /deardiary
+// respond to requests for /deardiary ****************
 app.get('/digital', function(req, res) {
 
     // Connect to the AWS DynamoDB database
