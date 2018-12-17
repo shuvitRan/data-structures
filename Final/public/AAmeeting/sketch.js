@@ -130,7 +130,12 @@ fetch(str, {method: 'GET'})
     
 }
 
-
+function setup(){
+        var removeAtt= select('.leaflet-control-attribution leaflet-control');
+        // var   removeAtt= document.getElementsByClassName('leaflet-control-attribution leaflet-control');
+        removeAtt.hide();
+    
+}
 
 
 
@@ -203,6 +208,7 @@ function setupMap(){
   
    // drawMarker();
    
+  
 
 }
 
