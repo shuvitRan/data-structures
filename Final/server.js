@@ -170,10 +170,14 @@ app.get('/pen', function(req, res) {
 
 
 //aa meeting------------------------------
-var todayAA=moment().tz("America/New_York").format('dddd');//.utcOffset(5);//.format('dddd');//.day();
-console.log(todayAA);
 
 app.get('/aainit', function(req, res) {
+    
+    
+    
+//check today's day    
+var todayAA=moment().tz("America/New_York").format('dddd');//.utcOffset(5);//.format('dddd');//.day();
+console.log(todayAA);
     
     // Connect to the AWS RDS Postgres database
     const client = new Pool(db_credentials);
