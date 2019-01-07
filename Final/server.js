@@ -381,8 +381,8 @@ app.get('/sund', function(req, res) {
 });
 
 // serve static files in /public
-//app.use(express.static('public'));
-app.use(express.static('public' + '/'));
+app.use(express.static('public'));
+//app.use(express.static('public' + '/'));
 
 // listen on port 8080
 app.listen(8080, function() {

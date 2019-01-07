@@ -2,7 +2,7 @@
 var sensordata=[ {sensortime: "2018-11-18T18:50:49.947Z"},{sensortime: "2018-11-18T18:52:50.059Z"}] ;
        
 var startTime=[], endTime=[];
-var dayinfo=[];
+var dayinfo=[], yearinfo=[];
 var daytimeStart=[], daytimeEnd=[];
 var periodGroup =[];
 var forday, testp;
@@ -19,9 +19,9 @@ var state= false;
 //console.log('dothings')
 
 function setup(){
- 
+ console.log("hello");
  //fetch talk to the server loading data and wait for it complete
-   let promise = fetch('../ss', {method: 'GET'})
+   let promise = fetch('/ss', {method: 'GET'})
     .then(function(response) {
       if(response.ok) return response.json();
       throw new Error('Request failed.');
@@ -30,7 +30,7 @@ function setup(){
       //document.getElementById('counter').innerHTML = `Button was clicked ${data.length} times`;
        return sensordata=data;
       console.log("first");
-      //console.log(sensordata);
+      //console.log(data);
     
       })
       .then(function(sensordata){
@@ -40,8 +40,8 @@ function setup(){
         
       })
       .then(function(){
-       // console.log("third");
-        
+        console.log("third");
+      
          //loadJOSN()
 
   createCanvas(windowWidth,(dayinfo.length+1)*30+100);
@@ -56,6 +56,7 @@ var index=0;
 var tempDay=0;
 
 for(var a =0 ; a<daytimeStart.length;a++){
+  
   var minuteOneDay=0;
   for (var i=0; i< startTime.length; i++){
       if(startTime[i]>daytimeStart[a] && endTime[i]<daytimeEnd[a]){
@@ -63,13 +64,15 @@ for(var a =0 ; a<daytimeStart.length;a++){
 
         if(index<startTime.length){
           periodGroup[index++]= new lineForPeriod(i,a);
+          console.log(startTime.length);
+          
         }
       }
 
   }
   totalMin.push(minuteOneDay);
-}
-//console.log(totalMin);
+};
+
 
 countAvHours();
         
@@ -160,7 +163,7 @@ for(var i=0; i < startTime.length; i++ ){
   previousDay = moment(startTime[i-1]).dayOfYear();
 
     if(currentday!=previousDay){
-
+     yearinfo.push(moment(startTime[i]).year());
       dayinfo.push(moment(startTime[i]).dayOfYear());
     }
 }
@@ -208,8 +211,8 @@ line(x1,0.1*yheight+dayY*30,x2,0.1*yheight+dayY*30);
 function lineForDay(){
 
 for (var i=0; i<dayinfo.length; i++){
-daytimeStart.push( moment().dayOfYear(dayinfo[i]).set({'hour': 6, 'minute':0,'second':0}));
-daytimeEnd.push( moment().dayOfYear(dayinfo[i]).set({'hour': 6, 'minute':0,'second':0}).add(1,'day'))
+daytimeStart.push( moment().dayOfYear(dayinfo[i]).set({'year': yearinfo[i],'hour': 6, 'minute':0,'second':0}));
+daytimeEnd.push( moment().dayOfYear(dayinfo[i]).set({'year': yearinfo[i],'hour': 6, 'minute':0,'second':0}).add(1,'day'))
 }
 //console.log(dayinfo.length);
 // console.log(daytimeEnd);
